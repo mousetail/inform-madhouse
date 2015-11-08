@@ -86,7 +86,16 @@ to decide if (tp - a tap) flows:
 
 The can't turn what's fixed in place rule does nothing if the noun is a tap.
 
+Section 5 - Floors
 
+A floor is a kind of thing. A floor is usually scenery. The description of a floor usually is "Pretty ordinary for the floor of this kind of room. ".  Every room contains a floor (called its floor).
+
+A indoor room is a kind of room.
+
+A wall is a kind of thing. A wall is usually scenery. The description of a wall is usually "Just like you would expect a wall here to be. ".  Every indoor room contains a wall (called its wall).
+
+A ceiling is a kind of thing. A ceiling is usually scenery. The description of a ceiling usually is "Nothing special is visible about
+the ceiling here. ". Every indoor room contains a ceiling (called its ceiling).
 
 Chapter 2 - Responses
 
@@ -137,7 +146,7 @@ Before looking in the attic for the first time:
 	He threw you into the small atic room, you hit your head again the wall, you could
 	just hear the man stomp out the door, locking it behind him. ".
 
-The attic is a room. "A small room, probably later cut off from the rest of the cellar. The walls are made of wooden planks, pretty new relative to the old floor. The
+The attic is a indoor room. "A small room, probably later cut off from the rest of the cellar. The walls are made of wooden planks, pretty new relative to the old floor. The
 ceiling runs diogonally down one side, there is a window in the ceiling". pJosh is here.
 
 Before looking in the cellar for the first time:
@@ -148,7 +157,7 @@ Before looking in the cellar for the first time:
 	under the stairs for quite some time. You examine yourself, your head hurts, you have bruises
 	everywhere, but miraculously havn['] broken anything. "
 
-The cellar is a room. "A small concrete hole in the ground, a narrow concrete staircase leads up, with a iron door above it. Another door is set into the ground on the east.
+The cellar is a indoor room. "A small concrete hole in the ground, a narrow concrete staircase leads up, with a iron door above it. Another door is set into the ground on the east.
 The room is lit with some flickering tubelights on the ceiling. ".
 pViolet is here.
 
@@ -184,7 +193,7 @@ Chapter 4 - Content
 Section 1 - Cellar
 
 The mainanance room is a east of the cellar. "This is a long room, with a low ceiling. A doorway goes west. It is full of narrow pipes, wide pipes, blue pipes, red pipes, leaking pipes, clean pipes,
-yea, and I forgot to mention pipes! ". It is below the cellar.
+yea, and I forgot to mention pipes! ". It is below the cellar. It is a indoor room.
 The narrow pipes, the wide pipes, the blue pipes, the red pipes, the leaking pipes and the clean pipes are plural-named scenery in the mainanance room.
 The tap of the narrow pipe is part of the narrow pipes. The description of it is "The type of pipe with a circle and spokes, its made of metal, and then somebody made a attempt to paint it,
 or maybe some paint leaked onto it. [if the tap of the narrow pipe flows]It
@@ -195,7 +204,7 @@ Report turning the tap of the narrow pipe:
 
 Section 2 - Bathroom
 
-The bathroom is a dark room. "A longish room. To the east is a door, you can see a sink, a toilet, and a shower here. ". pSean is here.
+The bathroom is a dark indoor room. "A longish room. To the east is a door, you can see a sink, a toilet, and a shower here. ". pSean is here.
 The bathroom sink is scenery in the bathroom. The printed name of the bathroom sink is "sink".
 The sink tap is part of the sink. The sink tap is a tap. The description of the sink tap is "It's pretty much a metal tube bent into
 a upside-down U-shape, it's pretty rusty on some places, but shiny on others. [if the sink tap flows]A thin stream of watter is 
@@ -211,6 +220,9 @@ Carry out looking under the toilet:
 Report someone looking under the toilet:
 	say "[the person asked] [find] a small tap, which seems to be connected to the flush box. " instead.
 
+The toilet pipe is part of the toilet. The description of it is "Not important. ".
+The flush box is part of the toilet. The description of it is "Not important. ".
+
 check flushing the toilet:
 	unless small toilet tap flows:
 		say "You pull the appropriate lever, but nothing seems to happen. " instead.
@@ -221,6 +233,8 @@ carry out flushing the toilet:
 The shower is scenery in the bathroom.
 
 The orange key is a passkey. It is in the sink. It unlocks the inside attic window.
+
+The description of the bathroom's floor is "A tiled floor. ".
 
 Report turning the sink tap:
 	if the noun is on:
