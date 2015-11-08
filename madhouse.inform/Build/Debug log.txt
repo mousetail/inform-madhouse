@@ -1,12 +1,12 @@
 Debugging log of Inform 7
-Inform called as: /usr/local/libexec/ni --internal /usr/local/share/inform7/data --format=ulx --project /home/maurits/IF/madhouse.inform
-Found language bundle 'Swedish' (from .materials)
-Found language bundle 'Spanish' (from .materials)
-Found language bundle 'Italian' (from .materials)
+Inform called as: C:\Program Files (x86)\Inform 7\Compilers\ni -internal C:\Program Files (x86)\Inform 7\Internal -project C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform -format=ulx
 Found language bundle 'English' (from .materials)
-Found language bundle 'German' (from .materials)
 Found language bundle 'French' (from .materials)
-Reading language definition from </usr/local/share/inform7/data/Languages/English/Syntax.preform>
+Found language bundle 'German' (from .materials)
+Found language bundle 'Italian' (from .materials)
+Found language bundle 'Spanish' (from .materials)
+Found language bundle 'Swedish' (from .materials)
+Reading language definition from <C:\Program Files (x86)\Inform 7\Internal\Languages\English\Syntax.preform>
 720 declarations read (14002 words)
 
 
@@ -14,7 +14,7 @@ Reading language definition from </usr/local/share/inform7/data/Languages/Englis
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 1595 words long.
+I've now read your source text, which is 1870 words long.
 
 
 -----------------------------------------------------
@@ -24,6 +24,7 @@ Phase II ... Semantic analysis Ia
 I've also read Standard Rules by Graham Nelson, which is 42616 words long.
 I've also read English Language by Graham Nelson, which is 2288 words long.
 I've also read locksmith by emily short, which is 4122 words long.
+I've also read double doors by Maurits van Riezen, which is 1220 words long.
 
 
 -----------------------------------------------------
@@ -175,8 +176,8 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 112 files written as streams.
-CPU time: 329 centiseconds
+Total of 117 files written as streams.
+CPU time: 1336 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

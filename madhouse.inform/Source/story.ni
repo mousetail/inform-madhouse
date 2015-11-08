@@ -1,6 +1,7 @@
 "madhouse" by "Maurits".
 
 include locksmith by emily short.
+include double doors by Maurits van Riezen.
 
 Chapter 1 - Basic Rules
 
@@ -24,7 +25,6 @@ Section 2 - Becoming
 A player name is a kind of value. A player name has a person called character.
 A player names are violet, daisy, josh, and sean.
 
-
 Becoming is an action applying to one player name.
 Carry out becoming a player name (called pname):
 	now the player is the character of pname;
@@ -36,8 +36,15 @@ understand "play [player name]" as becoming.
 understand "become" and "turn into" as a mistake ("You could become Violet, become Daisy, become Josh, or become Sean. ").
 
 
-after printing the name of a room:
+after printing the name of a room while constructing the status line or looking:
 	say "(as [printed name of the player])".
+
+Section 4 - Flushing
+
+Flushing is an action applying to one touchable thing.
+Understand "Flush [something]" as flushing.
+Last carry out flushing:
+	say "You can't flush that! " instead.
 
 
 Section 3 - RoomTouching
@@ -51,7 +58,13 @@ Carry out an actor RoomTouching:
 
 Section 4 - taps
 
-A tap is a kind of thing. A tap can be on or off. A tap is usually not portable.
+A tap is a kind of thing. A tap can be on or off. A tap is usually not portable. A tap can be flowable. A tap is usually flowable.
+
+Flowing relates various tap to various taps. 
+
+The verb to flow from (he flows from, they flow from, he flowed from, it is flowing from) means the flowing relation.
+The verb to flow to (he flows to, they flow to, he flowed to, it is flowing to) means the reversed flowing relation.
+
 Carry out turning a tap:
 	if the noun is on:
 		now the noun is off;
@@ -63,56 +76,16 @@ Report turning a tap:
 	else:
 		say "You turn off the tap. " instead.
 
+to decide if (tp - a tap) flows:
+	if tp is off:
+		decide no;
+	repeat with tp2 running through things flowing to tp:
+		unless tp2 flows:
+			decide no;
+	decide yes;
+
 The can't turn what's fixed in place rule does nothing if the noun is a tap.
 
-Section 5 - Two sided doors
-
-
-A base half door is a kind of thing. A base half door can be closed or open. A base half door can be locked or unlocked.
-
-The can't enter what's not enterable rule does nothing if the noun is a base half door.
-The can't open unless openable rule does nothing if the noun is a base half door.
-The can't close unless openable rule does nothing if the noun is a base half door.
-
-A half door is a kind of base half door. A half door has a direction called facing.
-
-opposing relates one half door to another (called the back side).
-
-The verb to be opposite to means the opposing relation.
-
-Instead of entering a base half door:
-	follow door entering rulebook for the noun;
-	if the rule succeeded:
-		follow the door leaving rulebook for the back side of noun;
-		if the rule succeeded:
-			now the player is in the location of the back side of the noun;
-			say "you entered the room.".
-
-
-door entering is a base half door based rulebook.
-
-door entering a base half door (called the dr):
-	if the dr is open:
-		rule succeeds.
-door leaving a base half door (called the dr):
-	if the dr is open:
-		rule succeeds.
-
-door leaving is a base half door based rulebook.
-
-Instead of opening a base half door:
-	open the noun.
-Instead of closing a base half door:
-	close the noun.
-
-To open (dr - a base half door):
-	now dr is open;
-	now the back side of dr is open.
-	
-To close (dr - a base half door):
-	now dr is closed;
-	now the back side of dr is closed.
-	
 
 
 Chapter 2 - Responses
@@ -123,7 +96,7 @@ the standard report taking rule response (A) is "Yours".
 the list writer internal rule response (P) is "locked".
 the parser error internal rule response (E) is "Just how do you expect to get a thing like that here?".
 the yes or no question internal rule response (A) is "Its not like its a difficult question, a 'yes' or a 'no' would be fine.".
-
+the can't unlock what's already unlocked rule response (A) is "[the noun] is locked allready.".
 
 Chapter 3 - Characters
 
@@ -144,6 +117,18 @@ The character of violet is pViolet.
 The character of josh is pJosh.
 The character of sean is pSean.
 The character of daisy is pDaisy.
+
+Section 2 - persuation
+
+Persuasion rule for asking pViolet to try doing something:
+	persuasion succeeds.
+Persuasion rule for asking Pjosh to try doing something:
+	persuasion succeeds.
+Persuasion rule for asking pSean to try doing something:
+	persuasion succeeds.
+Persuasion rule for asking PDaisy to try doing something:
+	persuasion succeeds.
+
 
 Chapter 3 - Locations
 
@@ -175,7 +160,7 @@ Before looking in the bathroom for the first time:
 	of there, moron!' he yelled as he walked further down the encoing hallway
 	outside. ". 
 
-The bathroom is a dark room. pSean is here.
+
 
 Instead of touching the bathroom the first time:
 	say "You search the walls, and finally find a lightswitch.";
@@ -202,19 +187,54 @@ The mainanance room is a east of the cellar. "This is a long room, with a low ce
 yea, and I forgot to mention pipes! ". It is below the cellar.
 The narrow pipes, the wide pipes, the blue pipes, the red pipes, the leaking pipes and the clean pipes are plural-named scenery in the mainanance room.
 The tap of the narrow pipe is part of the narrow pipes. The description of it is "The type of pipe with a circle and spokes, its made of metal, and then somebody made a attempt to paint it,
-or maybe some paint leaked onto it. ". The tap of the narrow pipe is a tap.
+or maybe some paint leaked onto it. [if the tap of the narrow pipe flows]It
+makes a gurgling noise.[end if]". The tap of the narrow pipe is a tap.
 Report turning the tap of the narrow pipe:
 	if the noun is on:
 		say "You turn on the tap. You hear the gurgling noise of air being pushed out the tap. " Instead.
 
 Section 2 - Bathroom
-	
-The bathroom sink is in the bathroom.
-The sink tap is part of the sink. The sink tap is a tap.
+
+The bathroom is a dark room. "A longish room. To the east is a door, you can see a sink, a toilet, and a shower here. ". pSean is here.
+The bathroom sink is scenery in the bathroom. The printed name of the bathroom sink is "sink".
+The sink tap is part of the sink. The sink tap is a tap. The description of the sink tap is "It's pretty much a metal tube bent into
+a upside-down U-shape, it's pretty rusty on some places, but shiny on others. [if the sink tap flows]A thin stream of watter is 
+comming out. [end if]". The sink tap flows from the tap of the narrow pipe. The description of the bathroom sink is "A ordinary
+porcelain sink, it hang a bit crookedly. On top of it is a tap[if the sink tap flows] out of which comes a small stram of water. [else]. [end if]".
+The bathroom toilet is scenery in the bathroom. The printed name of the bathroom toilet is "toilet". The description of the
+bathroom toilet is "A pretty ordinary stock toilet. It is dry. ".
+
+The small toilet tap is part of the toilet. It is a tap. It flows from the tap of the narrow pipe. 
+
+Carry out looking under the toilet:
+	say "Behind the toilet you find a small tap, connected to a pipe, connected to the flush box. " instead.
+Report someone looking under the toilet:
+	say "[the person asked] [find] a small tap, which seems to be connected to the flush box. " instead.
+
+check flushing the toilet:
+	unless small toilet tap flows:
+		say "You pull the appropriate lever, but nothing seems to happen. " instead.
+carry out flushing the toilet:
+	say "You flush the toilet. " instead.
+
+
+The shower is scenery in the bathroom.
+
+The orange key is a passkey. It is in the sink. It unlocks the inside attic window.
+
+Report turning the sink tap:
+	if the noun is on:
+		unless the noun flows:
+			say "You turn the tap, but no watter comes out. " instead;
+		else:
+			say "You turn the tap, and a thin stream of water comes out. " instead.
 
 Section 3 - Attic
 
 The inside attic window is a half door. It is in the attic. The description of the inside attic window is "The window looks out over the cold
-garden of the castle. The moon and stars shine threw here. ". The inside attic window is open.
+garden of the castle. The moon and stars shine threw here. ". The inside attic window is closed and locked.
+
+The broad box is in the attic. The pair of socks is in the box. The box is closed. The box is locked. The purple key unlocks the box.
 
 The roof is a room. The outside attic window is a half door. It is in the roof. It is open. The outside attic window is opposite to the inside attic window.
+

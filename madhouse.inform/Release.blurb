@@ -1,19 +1,19 @@
 ! Blurb file created by Inform build 6L38
 
-status "/usr/local/share/inform7/data/Miscellany/CblorbModel.html" "/home/maurits/IF/madhouse.inform/Build/StatusCblorb.html"
+status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform\Build\StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/home/maurits/IF/madhouse.inform"
+project folder "C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform"
 
 ! Blorb instructions
 
 storyfile leafname "madhouse.gblorb"
-storyfile "/home/maurits/IF/madhouse.inform/Build/output.ulx" include
-ifiction "/home/maurits/IF/madhouse.inform/Metadata.iFiction" include
-cover "/usr/local/share/inform7/data/Miscellany/Cover.jpg"
-picture 1 "/usr/local/share/inform7/data/Miscellany/Cover.jpg"
+storyfile "C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform\Build\output.ulx" include
+ifiction "C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform\Metadata.iFiction" include
+cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 
 ! Placeholder variables
 
