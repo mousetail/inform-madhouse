@@ -102,6 +102,30 @@ Instead of putting something on a floor:
 
 The can't put onto what's not a supporter rule does nothing if the noun is a floor.
 
+Section 6 - Newspapers
+
+Understand the command "read" as something new.
+
+Reading is an action applying to one visible thing and requiring light.
+
+Understand "read [something]" as reading.
+
+Report reading a newspaper:
+	say "Skimming the newspaper, you find a story about[one of] the murder of a african dictator[or]
+	a film star telling about her latest movie[or]
+	a new wonder drug promising to end obesity forever[or]
+	a pollitician speaking out against pollution[or]
+	a econmic crisis in europe[or]
+	alien sightings by a professor at DIU[or]
+	a old man discussing how much he enjoys playing board games with his grandchilderen[or]
+	a new IF novel has been published [or]
+	a new store opening in Gurgoun[at random]. " instead.
+
+Report reading something:
+	try examining the noun.
+
+A newspaper is a kind of thing. The description of a newspaper is usually "White paper, with some text. ".
+
 Chapter 2 - Responses
 
 the print empty inventory rule response (A) is "[We] [are] empty handed.".
@@ -212,6 +236,11 @@ The description of the blue pipes is "Some bluish-greyish pipes are running from
 The description of the red pipes is "Three rusty iron pipes, about as thick as the thickest part of your leg, run from ceiling to floor. One has a new coper ring halfway up,
 maybe replacing a leaking part. ".
 
+The iron door is a half door in the cellar. The description of it is "A long, iron door is above the stairs here. A heavy iron lock
+is attached to the door, with the bolt on the inside. You would need a very big key to get threw here.". It is closed and locked.
+
+
+
 		
 Section 2 - Bathroom
 
@@ -262,4 +291,11 @@ garden of the castle. The moon and stars shine threw here. ". The inside attic w
 The broad box is in the attic. The pair of socks is in the box. The box is closed. The box is locked. The purple key unlocks the box.
 
 The roof is a room. The outside attic window is a half door. It is in the roof. It is open. The outside attic window is opposite to the inside attic window.
+
+The description of the attic's floor is "It's made of wooden beams, with pretty wide cracks. You can see the room below you
+quite well, it seems to be some kind of bedroom. ".
+
+Section 4 - the garage
+
+7 newspapers are in the garage.
 
