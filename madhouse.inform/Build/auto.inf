@@ -11717,6 +11717,7 @@ Object -> I157_mainanance_room_s_floor ""
 Object -> I158_narrow_pipes ""
     class K2_thing
     with short_name BC_328
+    with description BC_329
     has pluralname
     has static
     has scenery
@@ -11728,7 +11729,6 @@ Object -> I158_narrow_pipes ""
     with KD_Count 2
     with name 'narrow' 'pipes' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with description BC_329
     with initial BC_330
     with list_together BC_331
     with plural BC_332
@@ -11738,6 +11738,7 @@ Object -> I158_narrow_pipes ""
 Object -> I159_wide_pipes ""
     class K2_thing
     with short_name BC_334
+    with description BC_335
     has pluralname
     has static
     has scenery
@@ -11748,7 +11749,6 @@ Object -> I159_wide_pipes ""
     with KD_Count 2
     with name 'wide' 'pipes' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with description BC_335
     with initial BC_336
     with list_together BC_337
     with plural BC_338
@@ -11758,6 +11758,7 @@ Object -> I159_wide_pipes ""
 Object -> I160_blue_pipes ""
     class K2_thing
     with short_name BC_340
+    with description BC_341
     has pluralname
     has static
     has scenery
@@ -11768,7 +11769,6 @@ Object -> I160_blue_pipes ""
     with KD_Count 2
     with name 'blue' 'pipes' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with description BC_341
     with initial BC_342
     with list_together BC_343
     with plural BC_344
@@ -11778,6 +11778,7 @@ Object -> I160_blue_pipes ""
 Object -> I161_red_pipes ""
     class K2_thing
     with short_name BC_346
+    with description BC_347
     has pluralname
     has static
     has scenery
@@ -11788,7 +11789,6 @@ Object -> I161_red_pipes ""
     with KD_Count 2
     with name 'red' 'pipes' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with description BC_347
     with initial BC_348
     with list_together BC_349
     with plural BC_350
@@ -13058,8 +13058,8 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! When play begins:
 [ R_865 ;
     if (debug_rules) DB_Rule(R_865, 865);
-    ! [1: say ~ 'Get the hell off of my property!' the man yelled.[line break] but we couldn[']t, we where frozen in fear. Violet screemed, the rest of us didn't have the breath. The cought up to us, grabbed Sean by the color as if he weighed nothing.[line break] 'Were going allready' Daisy yelled, but the man wouldn[']t listen. Josh started running again, but tripped on a tree branch, and the man cought him too.~]
-    say__p=1;ParaContent(); print " ~Get the hell off of my property!~ the man yelled.";ParaContent(); new_line;ParaContent(); print " but we couldn";ParaContent(); print "'";ParaContent(); print "t, we where frozen in fear. Violet screemed, the rest of us didn't have the breath. The cought up to us, grabbed Sean by the color as if he weighed nothing.";ParaContent(); new_line;ParaContent(); print " ~Were going allready~ Daisy yelled, but the man wouldn";ParaContent(); print "'";ParaContent(); print "t listen. Josh started running again, but tripped on a tree branch, and the man cought him too."; new_line; .L_Say1; .L_SayX1;
+    ! [1: say ~ 'Get the hell off of my property!' the man yelled.[line break] but we couldn[']t, we where frozen in fear. Violet screamed, the rest of us didn't have the breath. The man cought up to us, grabbed Sean by his color as if he weighed nothing.[line break] 'Were going allready' Daisy yelled, but the man wouldn[']t listen. Josh started running again, but tripped on a tree branch, and the man cought him too.~]
+    say__p=1;ParaContent(); print " ~Get the hell off of my property!~ the man yelled.";ParaContent(); new_line;ParaContent(); print " but we couldn";ParaContent(); print "'";ParaContent(); print "t, we where frozen in fear. Violet screamed, the rest of us didn't have the breath. The man cought up to us, grabbed Sean by his color as if he weighed nothing.";ParaContent(); new_line;ParaContent(); print " ~Were going allready~ Daisy yelled, but the man wouldn";ParaContent(); print "'";ParaContent(); print "t listen. Josh started running again, but tripped on a tree branch, and the man cought him too."; new_line; .L_Say1; .L_SayX1;
     ! [2: say ~HINT: You can use Become (character) to run into another Daisy, Josh, Sean, or Violet. ~]
     say__p=1;ParaContent(); print "HINT: You can use Become (character) to run into another Daisy, Josh, Sean, or Violet. "; .L_Say2; .L_SayX2;
     rfalse;
@@ -13589,8 +13589,8 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((PAPR_0() && (((TimesActionHasHappened-->0) == 1) && (ActionCurrentlyHappeningFlag->0)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_878, 878);
-    ! [1: say ~'here you go' the man yelled 'you will never get out of here untill you rot!' He threw you into the small atic room, you hit your head again the wall, you could just hear the man stomp out the door, locking it behind him. ~]
-    say__p=1;ParaContent(); print "~here you go~ the man yelled ~you will never get out of here untill you rot!~ He threw you into the small atic room, you hit your head again the wall, you could just hear the man stomp out the door, locking it behind him. "; .L_Say5; .L_SayX5;
+    ! [1: say ~'here ya go' the man yelled 'you will never get out of here untill you rot!' He threw you into the small room, you hit your head again some kind of box, you could just hear the man stomp out the door, locking it behind him. ~]
+    say__p=1;ParaContent(); print "~here ya go~ the man yelled ~you will never get out of here untill you rot!~ He threw you into the small room, you hit your head again some kind of box, you could just hear the man stomp out the door, locking it behind him. "; .L_Say5; .L_SayX5;
     } else if (debug_rules > 1) DB_Rule(R_878, 878, 'action');
     rfalse;
 ];
@@ -13600,8 +13600,8 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((PAPR_1() && (((TimesActionHasHappened-->1) == 1) && (ActionCurrentlyHappeningFlag->1)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_879, 879);
-    ! [1: say ~You could hardly look. The man was holing you by your arm, and suddendly, you where flying. 'there you go, no way of gettting out of there!' the man sneered. You seemed to hit some stairs or something, and you kept rolling down, and down, You don't know how long you rolled, but your scared mind didn't reallize when the stairs ended, and now you seem to have been lying under the stairs for quite some time. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn['] broken anything. ~]
-    say__p=1;ParaContent(); print "You could hardly look. The man was holing you by your arm, and suddendly, you where flying. ~there you go, no way of gettting out of there!~ the man sneered. You seemed to hit some stairs or something, and you kept rolling down, and down, You don't know how long you rolled, but your scared mind didn't reallize when the stairs ended, and now you seem to have been lying under the stairs for quite some time. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn";ParaContent(); print "'";ParaContent(); print " broken anything. "; .L_Say6; .L_SayX6;
+    ! [1: say ~You could hardly look. The man was holing you by your arm, and suddendly, you where flying. 'there you go, no way of gettting out of there!' the man sneered. You seemed to hit some stairs, and you kept rolling down, and down. You thought you where still rolling when you opened your eyes, but instead you find yourself lying still under a flight of stairs. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn['] broken anything. ~]
+    say__p=1;ParaContent(); print "You could hardly look. The man was holing you by your arm, and suddendly, you where flying. ~there you go, no way of gettting out of there!~ the man sneered. You seemed to hit some stairs, and you kept rolling down, and down. You thought you where still rolling when you opened your eyes, but instead you find yourself lying still under a flight of stairs. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn";ParaContent(); print "'";ParaContent(); print " broken anything. "; .L_Say6; .L_SayX6;
     } else if (debug_rules > 1) DB_Rule(R_879, 879, 'action');
     rfalse;
 ];
@@ -13611,8 +13611,8 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((PAPR_2() && (((TimesActionHasHappened-->2) == 1) && (ActionCurrentlyHappeningFlag->2)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_880, 880);
-    ! [1: say ~You put up a good fight, you kept biting, scratching and prying. 'you think you are smart resisting like that? Stupid lemon you are!' the man yelled. He threw you into the nearest door, and then slammed it. You heared sounds like a heavy wooden object was moved in front of the door. 'You will never get out of there, moron!' he yelled as he walked further down the encoing hallway outside. ~]
-    say__p=1;ParaContent(); print "You put up a good fight, you kept biting, scratching and prying. ~you think you are smart resisting like that? Stupid lemon you are!~ the man yelled. He threw you into the nearest door, and then slammed it. You heared sounds like a heavy wooden object was moved in front of the door. ~You will never get out of there, moron!~ he yelled as he walked further down the encoing hallway outside. "; .L_Say7; .L_SayX7;
+    ! [1: say ~You put up a good fight, you kept biting, scratching and prying. 'you think you are smart resisting like that? Stupid mormel you are!' the man yelled. He threw you into the the first door he passed. You heared sounds like a heavy wooden object was moved in front of the the door, and you heard 'You will never get out of there, moron!' ~]
+    say__p=1;ParaContent(); print "You put up a good fight, you kept biting, scratching and prying. ~you think you are smart resisting like that? Stupid mormel you are!~ the man yelled. He threw you into the the first door he passed. You heared sounds like a heavy wooden object was moved in front of the the door, and you heard ~You will never get out of there, moron!~ "; .L_Say7; .L_SayX7;
     } else if (debug_rules > 1) DB_Rule(R_880, 880, 'action');
     rfalse;
 ];
@@ -13652,8 +13652,8 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((((action ==##Look) &&  (actor==player) && ((real_location == I150_garage) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_882, 882);
-    ! [1: say ~You must have fainted at some point, because at some point, you heared the man saying 'Now I am going to leave this old place, and go on a long holiday, good thing you showed up the day before the taxes where due!' You heared the sound of a car drive away, you look arround. ~]
-    say__p=1;ParaContent(); print "You must have fainted at some point, because at some point, you heared the man saying ~Now I am going to leave this old place, and go on a long holiday, good thing you showed up the day before the taxes where due!~ You heared the sound of a car drive away, you look arround. "; .L_Say9; .L_SayX9;
+    ! [1: say ~You must have fainted, because at some point, you heared the man saying 'Now I am going to leave this old place, and go on a long holiday, good thing you showed up the day before my holiday to Madagascar.!' You heared the sound of a car drive away, you look arround. ~]
+    say__p=1;ParaContent(); print "You must have fainted, because at some point, you heared the man saying ~Now I am going to leave this old place, and go on a long holiday, good thing you showed up the day before my holiday to Madagascar.!~ You heared the sound of a car drive away, you look arround. "; .L_Say9; .L_SayX9;
     } else if (debug_rules > 1) DB_Rule(R_882, 882, 'action');
     rfalse;
 ];
@@ -20951,7 +20951,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
                     ((
                         ((((((formal_par0 ofclass K20_tap) && (formal_par0 ofclass K20_tap))))) && ((
                         formal_rv = ((PHR_872_r7 (formal_par0)))) | 1)
-                        )|| (ArgumentTypeFailed(246))
+                        )|| (ArgumentTypeFailed(252))
 
                     ))
                 +
@@ -52749,30 +52749,34 @@ Verb 'flush'
 
 
 
-Constant TX_PS_96 = ">";
-Constant TX_PS_77 = "A longish room. To the east is a door, you can see a sink, a toilet, and a shower here. ";
-Constant TX_PS_86 = "A pretty ordinary stock toilet. It is dry. ";
+Constant TX_PS_100 = ">";
+Constant TX_PS_70 = "A collection of long straight tubes, running from the floor to the ceiling. One pipe has a tap attached to it.";
+Constant TX_PS_81 = "A longish room. To the east is a door, you can see a sink, a toilet, and a shower here. ";
+Constant TX_PS_90 = "A pretty ordinary stock toilet. It is dry. ";
 Constant TX_PS_54 = "A small concrete hole in the ground, a narrow concrete staircase leads up, with a iron door above it. Another door is set into the ground on the east. The room is lit with some flickering tubelights on the ceiling. ";
 Constant TX_PS_44 = "A small room, probably later cut off from the rest of the cellar. The walls are made of wooden planks, pretty new relative to the old floor. The ceiling runs diogonally down one side, there is a window in the ceiling";
-Constant TX_PS_82 = "A tiled floor. ";
+Constant TX_PS_86 = "A tiled floor. ";
 Constant TX_PS_3 = "An Interactive Fiction";
 Constant TX_PS_60 = "Daisy";
-Constant TX_PS_97 = "Fiction";
+Constant TX_PS_101 = "Fiction";
 Constant TX_PS_45 = "Josh";
 Constant TX_PS_24 = "Just like you would expect a wall here to be. ";
 Constant TX_PS_4 = "Maurits";
-Constant TX_PS_91 = "Not important. ";
+Constant TX_PS_95 = "Not important. ";
 Constant TX_PS_26 = "Nothing special is visible about the ceiling here. ";
 Constant TX_PS_22 = "Pretty ordinary for the floor of this kind of room. ";
-Constant TX_PS_101 = "QUIT";
-Constant TX_PS_98 = "RESTART";
-Constant TX_PS_99 = "RESTORE a saved game";
-Constant TX_PS_78 = "Sean";
+Constant TX_PS_105 = "QUIT";
+Constant TX_PS_102 = "RESTART";
+Constant TX_PS_103 = "RESTORE a saved game";
+Constant TX_PS_82 = "Sean";
+Constant TX_PS_74 = "Some bluish-greyish pipes are running from wall to wall. They are equally thin as the thin pipes.";
 Constant TX_PS_50 = "The window looks out over the cold garden of the castle. The moon and stars shine threw here. ";
 Constant TX_PS_65 = "This is a long room, with a low ceiling. A doorway goes west. It is full of narrow pipes, wide pipes, blue pipes, red pipes, leaking pipes, clean pipes, yea, and I forgot to mention pipes! ";
-Constant TX_PS_102 = "UNDO the last command";
+Constant TX_PS_76 = "Three rusty iron pipes, about as thick as the thickest part of your leg, run from ceiling to floor. One has a new coper ring halfway up, maybe replacing a leaking part. ";
+Constant TX_PS_72 = "Two very fat concrete tube, runs from one wall to the ceiling.";
+Constant TX_PS_106 = "UNDO the last command";
 Constant TX_PS_55 = "Violet";
-Constant TX_PS_103 = "You could become Violet, become Daisy, become Josh, or become Sean. ";
+Constant TX_PS_107 = "You could become Violet, become Daisy, become Josh, or become Sean. ";
 Constant TX_PS_10 = "animals";
 Constant TX_PS_43 = "attic";
 Constant TX_PS_47 = "attic's ceiling";
@@ -52780,18 +52784,18 @@ Constant TX_PS_48 = "attic's floor";
 Constant TX_PS_46 = "attic's wall";
 Constant TX_PS_15 = "backdrops";
 Constant TX_PS_18 = "base half doors";
-Constant TX_PS_76 = "bathroom";
-Constant TX_PS_80 = "bathroom's ceiling";
-Constant TX_PS_81 = "bathroom's floor";
-Constant TX_PS_79 = "bathroom's wall";
-Constant TX_PS_71 = "blue pipes";
+Constant TX_PS_80 = "bathroom";
+Constant TX_PS_84 = "bathroom's ceiling";
+Constant TX_PS_85 = "bathroom's floor";
+Constant TX_PS_83 = "bathroom's wall";
+Constant TX_PS_73 = "blue pipes";
 Constant TX_PS_51 = "broad box";
 Constant TX_PS_25 = "ceilings";
 Constant TX_PS_53 = "cellar";
 Constant TX_PS_57 = "cellar's ceiling";
 Constant TX_PS_58 = "cellar's floor";
 Constant TX_PS_56 = "cellar's wall";
-Constant TX_PS_74 = "clean pipes";
+Constant TX_PS_78 = "clean pipes";
 Constant TX_PS_12 = "containers";
 Constant TX_PS_16 = "devices";
 Constant TX_PS_28 = "directions";
@@ -52799,14 +52803,14 @@ Constant TX_PS_11 = "doors";
 Constant TX_PS_39 = "down";
 Constant TX_PS_36 = "east";
 Constant TX_PS_21 = "floors";
-Constant TX_PS_92 = "flush box";
+Constant TX_PS_96 = "flush box";
 Constant TX_PS_59 = "garage";
 Constant TX_PS_62 = "garage's floor";
 Constant TX_PS_19 = "half doors";
 Constant TX_PS_49 = "inside attic window";
 Constant TX_PS_40 = "inside";
 Constant TX_PS_6 = "keychains";
-Constant TX_PS_73 = "leaking pipes";
+Constant TX_PS_77 = "leaking pipes";
 Constant TX_PS_2 = "madhouse";
 Constant TX_PS_64 = "mainanance room";
 Constant TX_PS_67 = "mainanance room's ceiling";
@@ -52817,37 +52821,37 @@ Constant TX_PS_69 = "narrow pipes";
 Constant TX_PS_29 = "north";
 Constant TX_PS_31 = "northeast";
 Constant TX_PS_32 = "northwest";
-Constant TX_PS_84 = "orange key";
-Constant TX_PS_95 = "outside attic window";
+Constant TX_PS_88 = "orange key";
+Constant TX_PS_99 = "outside attic window";
 Constant TX_PS_41 = "outside";
 Constant TX_PS_52 = "pair of socks";
 Constant TX_PS_17 = "passkeys";
 Constant TX_PS_7 = "people";
 Constant TX_PS_14 = "player's holdalls";
 Constant TX_PS_63 = "purple key";
-Constant TX_PS_72 = "red pipes";
+Constant TX_PS_75 = "red pipes";
 Constant TX_PS_27 = "regions";
-Constant TX_PS_93 = "roof";
-Constant TX_PS_94 = "roof's floor";
-Constant TX_PS_100 = "see some suggestions for AMUSING things to do";
-Constant TX_PS_87 = "shower";
-Constant TX_PS_88 = "sink tap";
-Constant TX_PS_83 = "sink";
-Constant TX_PS_89 = "small toilet tap";
+Constant TX_PS_97 = "roof";
+Constant TX_PS_98 = "roof's floor";
+Constant TX_PS_104 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_91 = "shower";
+Constant TX_PS_92 = "sink tap";
+Constant TX_PS_87 = "sink";
+Constant TX_PS_93 = "small toilet tap";
 Constant TX_PS_33 = "south";
 Constant TX_PS_34 = "southeast";
 Constant TX_PS_35 = "southwest";
 Constant TX_PS_5 = "supporters";
-Constant TX_PS_75 = "tap of the narrow pipe";
+Constant TX_PS_79 = "tap of the narrow pipe";
 Constant TX_PS_20 = "taps";
 Constant TX_PS_30 = "the";
-Constant TX_PS_90 = "toilet pipe";
-Constant TX_PS_85 = "toilet";
+Constant TX_PS_94 = "toilet pipe";
+Constant TX_PS_89 = "toilet";
 Constant TX_PS_38 = "up";
 Constant TX_PS_13 = "vehicles";
 Constant TX_PS_23 = "walls";
 Constant TX_PS_37 = "west";
-Constant TX_PS_70 = "wide pipes";
+Constant TX_PS_71 = "wide pipes";
 Constant TX_PS_9 = "women";
 Constant TX_PS_61 = "yellow chain";
 Constant TX_PS_42 = "yourself";
@@ -60353,153 +60357,153 @@ Array BC_325 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_326 --> PACKED_TEXT_STORAGE TX_PS_21;
 Array BC_327 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_328 --> PACKED_TEXT_STORAGE TX_PS_69;
-Array BC_329 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_329 --> PACKED_TEXT_STORAGE TX_PS_70;
 Array BC_330 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_331 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_332 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_333 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_334 --> PACKED_TEXT_STORAGE TX_PS_70;
-Array BC_335 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_334 --> PACKED_TEXT_STORAGE TX_PS_71;
+Array BC_335 --> PACKED_TEXT_STORAGE TX_PS_72;
 Array BC_336 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_337 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_338 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_339 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_340 --> PACKED_TEXT_STORAGE TX_PS_71;
-Array BC_341 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_340 --> PACKED_TEXT_STORAGE TX_PS_73;
+Array BC_341 --> PACKED_TEXT_STORAGE TX_PS_74;
 Array BC_342 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_343 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_344 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_345 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_346 --> PACKED_TEXT_STORAGE TX_PS_72;
-Array BC_347 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_346 --> PACKED_TEXT_STORAGE TX_PS_75;
+Array BC_347 --> PACKED_TEXT_STORAGE TX_PS_76;
 Array BC_348 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_349 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_350 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_351 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_352 --> PACKED_TEXT_STORAGE TX_PS_73;
+Array BC_352 --> PACKED_TEXT_STORAGE TX_PS_77;
 Array BC_353 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_354 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_355 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_356 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_357 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_358 --> PACKED_TEXT_STORAGE TX_PS_74;
+Array BC_358 --> PACKED_TEXT_STORAGE TX_PS_78;
 Array BC_359 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_360 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_361 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_362 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_363 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_364 --> PACKED_TEXT_STORAGE TX_PS_75;
+Array BC_364 --> PACKED_TEXT_STORAGE TX_PS_79;
 Array BC_365 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_135;
 Array BC_366 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_367 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_368 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_369 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_370 --> PACKED_TEXT_STORAGE TX_PS_76;
-Array BC_371 --> PACKED_TEXT_STORAGE TX_PS_77;
+Array BC_370 --> PACKED_TEXT_STORAGE TX_PS_80;
+Array BC_371 --> PACKED_TEXT_STORAGE TX_PS_81;
 Array BC_372 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_373 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_374 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_375 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_375 --> PACKED_TEXT_STORAGE TX_PS_82;
 Array BC_376 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_136;
 Array BC_377 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_378 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_379 --> PACKED_TEXT_STORAGE TX_PS_8;
 Array BC_380 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_381 --> PACKED_TEXT_STORAGE TX_PS_79;
+Array BC_381 --> PACKED_TEXT_STORAGE TX_PS_83;
 Array BC_382 --> PACKED_TEXT_STORAGE TX_PS_24;
 Array BC_383 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_384 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_385 --> PACKED_TEXT_STORAGE TX_PS_23;
 Array BC_386 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_387 --> PACKED_TEXT_STORAGE TX_PS_80;
+Array BC_387 --> PACKED_TEXT_STORAGE TX_PS_84;
 Array BC_388 --> PACKED_TEXT_STORAGE TX_PS_26;
 Array BC_389 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_390 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_391 --> PACKED_TEXT_STORAGE TX_PS_25;
 Array BC_392 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_393 --> PACKED_TEXT_STORAGE TX_PS_81;
-Array BC_394 --> PACKED_TEXT_STORAGE TX_PS_82;
+Array BC_393 --> PACKED_TEXT_STORAGE TX_PS_85;
+Array BC_394 --> PACKED_TEXT_STORAGE TX_PS_86;
 Array BC_395 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_396 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_397 --> PACKED_TEXT_STORAGE TX_PS_21;
 Array BC_398 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_399 --> PACKED_TEXT_STORAGE TX_PS_83;
+Array BC_399 --> PACKED_TEXT_STORAGE TX_PS_87;
 Array BC_400 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_137;
 Array BC_401 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_402 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_403 --> PACKED_TEXT_STORAGE TX_PS_12;
 Array BC_404 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_405 --> PACKED_TEXT_STORAGE TX_PS_84;
+Array BC_405 --> PACKED_TEXT_STORAGE TX_PS_88;
 Array BC_406 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_407 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_408 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_409 --> PACKED_TEXT_STORAGE TX_PS_17;
 Array BC_410 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_411 --> PACKED_TEXT_STORAGE TX_PS_85;
-Array BC_412 --> PACKED_TEXT_STORAGE TX_PS_86;
+Array BC_411 --> PACKED_TEXT_STORAGE TX_PS_89;
+Array BC_412 --> PACKED_TEXT_STORAGE TX_PS_90;
 Array BC_413 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_414 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_415 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_416 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_417 --> PACKED_TEXT_STORAGE TX_PS_87;
+Array BC_417 --> PACKED_TEXT_STORAGE TX_PS_91;
 Array BC_418 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_419 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_420 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_421 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_422 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_423 --> PACKED_TEXT_STORAGE TX_PS_88;
+Array BC_423 --> PACKED_TEXT_STORAGE TX_PS_92;
 Array BC_424 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_138;
 Array BC_425 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_426 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_427 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_428 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_429 --> PACKED_TEXT_STORAGE TX_PS_89;
+Array BC_429 --> PACKED_TEXT_STORAGE TX_PS_93;
 Array BC_430 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_431 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_432 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_433 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_434 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_435 --> PACKED_TEXT_STORAGE TX_PS_90;
-Array BC_436 --> PACKED_TEXT_STORAGE TX_PS_91;
+Array BC_435 --> PACKED_TEXT_STORAGE TX_PS_94;
+Array BC_436 --> PACKED_TEXT_STORAGE TX_PS_95;
 Array BC_437 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_438 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_439 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_440 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_441 --> PACKED_TEXT_STORAGE TX_PS_92;
-Array BC_442 --> PACKED_TEXT_STORAGE TX_PS_91;
+Array BC_441 --> PACKED_TEXT_STORAGE TX_PS_96;
+Array BC_442 --> PACKED_TEXT_STORAGE TX_PS_95;
 Array BC_443 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_444 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_445 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_446 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_447 --> PACKED_TEXT_STORAGE TX_PS_93;
+Array BC_447 --> PACKED_TEXT_STORAGE TX_PS_97;
 Array BC_448 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_449 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_450 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_451 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_452 --> PACKED_TEXT_STORAGE TX_PS_94;
+Array BC_452 --> PACKED_TEXT_STORAGE TX_PS_98;
 Array BC_453 --> PACKED_TEXT_STORAGE TX_PS_22;
 Array BC_454 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_455 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_456 --> PACKED_TEXT_STORAGE TX_PS_21;
 Array BC_457 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_458 --> PACKED_TEXT_STORAGE TX_PS_95;
+Array BC_458 --> PACKED_TEXT_STORAGE TX_PS_99;
 Array BC_459 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_460 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_461 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_462 --> PACKED_TEXT_STORAGE TX_PS_19;
 Array BC_463 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_464 --> PACKED_TEXT_STORAGE TX_PS_96;
+Array BC_464 --> PACKED_TEXT_STORAGE TX_PS_100;
 Array BC_465 --> PACKED_TEXT_STORAGE TX_PS_4;
 Array BC_466 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_467 --> PACKED_TEXT_STORAGE TX_PS_97;
+Array BC_467 --> PACKED_TEXT_STORAGE TX_PS_101;
 Array BC_468 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_469 --> PACKED_TEXT_STORAGE TX_PS_98;
-Array BC_470 --> PACKED_TEXT_STORAGE TX_PS_99;
-Array BC_471 --> PACKED_TEXT_STORAGE TX_PS_100;
-Array BC_472 --> PACKED_TEXT_STORAGE TX_PS_101;
-Array BC_473 --> PACKED_TEXT_STORAGE TX_PS_102;
-Array BC_474 --> PACKED_TEXT_STORAGE TX_PS_103;
-Array BC_475 --> PACKED_TEXT_STORAGE TX_PS_103;
+Array BC_469 --> PACKED_TEXT_STORAGE TX_PS_102;
+Array BC_470 --> PACKED_TEXT_STORAGE TX_PS_103;
+Array BC_471 --> PACKED_TEXT_STORAGE TX_PS_104;
+Array BC_472 --> PACKED_TEXT_STORAGE TX_PS_105;
+Array BC_473 --> PACKED_TEXT_STORAGE TX_PS_106;
+Array BC_474 --> PACKED_TEXT_STORAGE TX_PS_107;
+Array BC_475 --> PACKED_TEXT_STORAGE TX_PS_107;
 
 
 

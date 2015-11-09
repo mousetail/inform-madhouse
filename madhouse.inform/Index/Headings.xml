@@ -88,28 +88,28 @@
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform\Source\story.ni</string>
-        <key>Line</key><integer>196</integer>
+        <key>Line</key><integer>195</integer>
         <key>Title</key><string>Chapter 4 - Content</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform\Source\story.ni</string>
-        <key>Line</key><integer>198</integer>
+        <key>Line</key><integer>197</integer>
         <key>Title</key><string>Section 1 - Cellar</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>14</key><dict>
         <key>Filename</key><string>C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform\Source\story.ni</string>
-        <key>Line</key><integer>210</integer>
+        <key>Line</key><integer>216</integer>
         <key>Title</key><string>Section 2 - Bathroom</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform\Source\story.ni</string>
-        <key>Line</key><integer>251</integer>
+        <key>Line</key><integer>257</integer>
         <key>Title</key><string>Section 3 - Attic</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>

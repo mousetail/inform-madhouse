@@ -10,9 +10,9 @@ Section 1 - Begin text
 When play begins:
 	say "
 	'Get the hell off of my property!' the man yelled.[line break]
-	but we couldn[']t, we where frozen in fear. Violet screemed,
-	the rest of us didn't have the breath. The cought up to us,
-	grabbed Sean by the color as if he weighed nothing.[line break]
+	but we couldn[']t, we where frozen in fear. Violet screamed,
+	the rest of us didn't have the breath. The man cought up to us,
+	grabbed Sean by his color as if he weighed nothing.[line break]
 	'Were going allready' Daisy yelled, but the man wouldn[']t
 	listen. Josh started running again, but tripped on a tree branch,
 	and the man cought him too.";
@@ -147,8 +147,8 @@ Persuasion rule for asking PDaisy to try doing something:
 Chapter 3 - Locations
 
 Before looking in the attic for the first time:
-	say "'here you go' the man yelled 'you will never get out of here untill you rot!'
-	He threw you into the small atic room, you hit your head again the wall, you could
+	say "'here ya go' the man yelled 'you will never get out of here untill you rot!'
+	He threw you into the small room, you hit your head again some kind of box, you could
 	just hear the man stomp out the door, locking it behind him. ".
 
 The attic is a indoor room. "A small room, probably later cut off from the rest of the cellar. The walls are made of wooden planks, pretty new relative to the old floor. The
@@ -156,10 +156,10 @@ ceiling runs diogonally down one side, there is a window in the ceiling". pJosh 
 
 Before looking in the cellar for the first time:
 	say "You could hardly look. The man was holing you by your arm, and suddendly, you where flying.
-	'there you go, no way of gettting out of there!' the man sneered. You seemed to hit some stairs
-	or something, and you kept rolling down, and down, You don't know how long you rolled, but
-	your scared mind didn't reallize when the stairs ended, and now you seem to have been lying
-	under the stairs for quite some time. You examine yourself, your head hurts, you have bruises
+	'there you go, no way of gettting out of there!' the man sneered. You seemed to hit some stairs,
+	and you kept rolling down, and down. You thought you where still rolling when you opened your
+	eyes, but instead you find yourself lying still under a flight of stairs. 
+	You examine yourself, your head hurts, you have bruises
 	everywhere, but miraculously havn['] broken anything. "
 
 The cellar is a indoor room. "A small concrete hole in the ground, a narrow concrete staircase leads up, with a iron door above it. Another door is set into the ground on the east.
@@ -168,11 +168,10 @@ pViolet is here.
 
 Before looking in the bathroom for the first time:
 	say "You put up a good fight, you kept biting, scratching and prying. 'you
-	think you are smart resisting like that? Stupid lemon you are!' the man
-	yelled. He threw you into the nearest door, and then slammed it. You heared sounds like a
-	heavy wooden object was moved in front of the door. 'You will never get out
-	of there, moron!' he yelled as he walked further down the encoing hallway
-	outside. ". 
+	think you are smart resisting like that? Stupid mormel you are!' the man
+	yelled. He threw you into the the first door he passed. You heared sounds like a
+	heavy wooden object was moved in front of the the door, and you heard 'You will never get out
+	of there, moron!' ". 
 
 
 
@@ -181,10 +180,10 @@ Instead of touching the bathroom the first time:
 	now the bathroom is not dark.
 
 Before looking in the  garage:
-	say "You must have fainted at some point, because at some point,
+	say "You must have fainted, because at some point,
 	you heared the man saying 'Now I am going to leave this old
 	place, and go on a long holiday, good thing you showed up the
-	day before the taxes where due!' You heared the sound of a car drive away,
+	day before my holiday to Madagascar.!' You heared the sound of a car drive away,
 	you look arround. ".
 
 The garage is a room. pDaisy is here.
@@ -199,7 +198,7 @@ Section 1 - Cellar
 
 The mainanance room is a east of the cellar. "This is a long room, with a low ceiling. A doorway goes west. It is full of narrow pipes, wide pipes, blue pipes, red pipes, leaking pipes, clean pipes,
 yea, and I forgot to mention pipes! ". It is below the cellar. It is a indoor room.
-The narrow pipes, the wide pipes, the blue pipes, the red pipes, the leaking pipes and the clean pipes are plural-named scenery in the mainanance room.
+Some narrow pipes, some wide pipes, some blue pipes, some red pipes, some leaking pipes and some clean pipes are plural-named scenery in the mainanance room.
 The tap of the narrow pipe is part of the narrow pipes. The description of it is "The type of pipe with a circle and spokes, its made of metal, and then somebody made a attempt to paint it,
 or maybe some paint leaked onto it. [if the tap of the narrow pipe flows]It
 makes a gurgling noise.[end if]". The tap of the narrow pipe is a tap.
@@ -207,6 +206,13 @@ Report turning the tap of the narrow pipe:
 	if the noun is on:
 		say "You turn on the tap. You hear the gurgling noise of air being pushed out the tap. " Instead.
 
+The description of the narrow pipes is "A collection of long straight tubes, running from the floor to the ceiling. One pipe has a tap attached to it.".
+The description of the wide pipes is "Two very fat concrete tube, runs from one wall to the ceiling.".
+The description of the blue pipes is "Some bluish-greyish pipes are running from wall to wall. They are equally thin as the thin pipes.".
+The description of the red pipes is "Three rusty iron pipes, about as thick as the thickest part of your leg, run from ceiling to floor. One has a new coper ring halfway up,
+maybe replacing a leaking part. ".
+
+		
 Section 2 - Bathroom
 
 The bathroom is a dark indoor room. "A longish room. To the east is a door, you can see a sink, a toilet, and a shower here. ". pSean is here.

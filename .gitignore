@@ -1,3 +1,7 @@
 *.html
 madhouse.inform\Index\*
 madhouse.inform\*\*.html
+madhouse.inform\Build\*
+madhouse.inform\Build\auto.inf
+madhouse.inform\build\Problems.html
+madhouse.inform\build\Debug log.txt
