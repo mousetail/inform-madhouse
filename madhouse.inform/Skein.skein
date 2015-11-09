@@ -1,169 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x003C8210" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x02E65588" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x02D86FE0"/>
-  <item nodeId="node-0x003C8210">
+  <activeNode nodeId="node-0x02E85F88"/>
+  <item nodeId="node-0x02E65588">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">"Get the hell off of my property!" the man yelled.&#x000A; but we couldn't, we where frozen in fear. Violet screemed, the rest of us didn't have the breath. The cought up to us, grabbed Sean by the color as if he weighed nothing.&#x000A; "Were going allready" Daisy yelled, but the man wouldn't listen. Josh started running again, but tripped on a tree branch, and the man cought him too.&#x000A;HINT: You can use Become (character) to run into another Daisy, Josh, Sean, or Violet. &#x000A;madhouse&#x000A;An Interactive Fiction by Maurits&#x000A;Release 1 / Serial number 151108 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;You could hardly look. The man was holing you by your arm, and suddendly, you where flying. "there you go, no way of gettting out of there!" the man sneered. You seemed to hit some stairs or something, and you kept rolling down, and down, You don't know how long you rolled, but your scared mind didn't reallize when the stairs ended, and now you seem to have been lying under the stairs for quite some time. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn' broken anything. &#x000A;cellar(as Violet)&#x000A;A small concrete hole in the ground, a narrow concrete staircase leads up, with a iron door above it. Another door is set into the ground on the east. The room is lit with some flickering tubelights on the ceiling. &#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">"Get the hell off of my property!" the man yelled.&#x000A; but we couldn't, we where frozen in fear. Violet screemed, the rest of us didn't have the breath. The cought up to us, grabbed Sean by the color as if he weighed nothing.&#x000A; "Were going allready" Daisy yelled, but the man wouldn't listen. Josh started running again, but tripped on a tree branch, and the man cought him too.&#x000A;HINT: You can use Become (character) to run into another Daisy, Josh, Sean, or Violet. &#x000A;madhouse&#x000A;An Interactive Fiction by Maurits&#x000A;Release 1 / Serial number 151109 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;You could hardly look. The man was holing you by your arm, and suddendly, you where flying. "there you go, no way of gettting out of there!" the man sneered. You seemed to hit some stairs or something, and you kept rolling down, and down, You don't know how long you rolled, but your scared mind didn't reallize when the stairs ended, and now you seem to have been lying under the stairs for quite some time. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn' broken anything. &#x000A;cellar(as Violet)&#x000A;A small concrete hole in the ground, a narrow concrete staircase leads up, with a iron door above it. Another door is set into the ground on the east. The room is lit with some flickering tubelights on the ceiling. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02D86E20"/>
-      <child nodeId="node-0x02D87AD0"/>
-      <child nodeId="node-0x02D86E90"/>
+      <child nodeId="node-0x02E86228"/>
     </children>
   </item>
-  <item nodeId="node-0x02D86E20">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">mainanance room(as Violet)&#x000A;This is a long room, with a low ceiling. A doorway goes west. It is full of narrow pipes, wide pipes, blue pipes, red pipes, leaking pipes, clean pipes, yea, and I forgot to mention pipes! &#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02E86228">
+    <command xml:space="preserve">purloin purple</command>
+    <result xml:space="preserve">[Purloined.]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02D871A0"/>
+      <child nodeId="node-0x02E85B98"/>
     </children>
   </item>
-  <item nodeId="node-0x02D871A0">
-    <command xml:space="preserve">turn tap</command>
-    <result xml:space="preserve">You turn on the tap. You hear the gurgling noise of air being pushed out the tap. &#x000A;&gt;</result>
+  <item nodeId="node-0x02E85B98">
+    <command xml:space="preserve">put purple on floor</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02D87830"/>
+      <child nodeId="node-0x02E85B28"/>
     </children>
   </item>
-  <item nodeId="node-0x02D87830">
-    <command xml:space="preserve">become sean</command>
-    <result xml:space="preserve">You put up a good fight, you kept biting, scratching and prying. "you think you are smart resisting like that? Stupid lemon you are!" the man yelled. He threw you into the nearest door, and then slammed it. You heared sounds like a heavy wooden object was moved in front of the door. "You will never get out of there, moron!" he yelled as he walked further down the encoing hallway outside. &#x000A;Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02E85B28">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are empty handed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02D87980"/>
+      <child nodeId="node-0x02E85F88"/>
     </children>
   </item>
-  <item nodeId="node-0x02D87980">
-    <command xml:space="preserve">feel blo</command>
-    <result xml:space="preserve">Just how do you expect to get a thing like that here?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02D87280"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02D87280">
-    <command xml:space="preserve">feel</command>
-    <result xml:space="preserve">You search the walls, and finally find a lightswitch.&#x000A;&#x000A;bathroom(as Sean)&#x000A;A longish room. To the east is a door, you can see a sink, a toilet, and a shower here. &#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02D86DB0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02D86DB0">
-    <command xml:space="preserve">listen</command>
-    <result xml:space="preserve">You hear nothing unexpected.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02D87AD0">
-    <command xml:space="preserve">x floor</command>
-    <result xml:space="preserve">Pretty ordinary for the floor of this kind of room. &#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02D872F0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02D872F0">
-    <command xml:space="preserve">become sean</command>
-    <result xml:space="preserve">You put up a good fight, you kept biting, scratching and prying. "you think you are smart resisting like that? Stupid lemon you are!" the man yelled. He threw you into the nearest door, and then slammed it. You heared sounds like a heavy wooden object was moved in front of the door. "You will never get out of there, moron!" he yelled as he walked further down the encoing hallway outside. &#x000A;Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02D86F00"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02D86F00">
-    <command xml:space="preserve">feel</command>
-    <result xml:space="preserve">You search the walls, and finally find a lightswitch.&#x000A;&#x000A;bathroom(as Sean)&#x000A;A longish room. To the east is a door, you can see a sink, a toilet, and a shower here. &#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02D873D0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02D873D0">
-    <command xml:space="preserve">x floor</command>
-    <result xml:space="preserve">A tiled floor. &#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02D86F70"/>
-      <child nodeId="node-0x02D876E0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02D86F70">
-    <command xml:space="preserve">showme floor of the bathroom</command>
-    <result xml:space="preserve">floor of the bathroom - thing&#x000A;location: out of play&#x000A;singular-named, improper-named; unlit, inedible, portable&#x000A;list grouping key: none&#x000A;printed name: "floor of the bathroom"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;description: "TEST"&#x000A;initial appearance: none&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02D876E0">
-    <command xml:space="preserve">showme floor</command>
-    <result xml:space="preserve">(the bathroom's floor)&#x000A;bathroom's floor - floor&#x000A;location: in the bathroom&#x000A;singular-named, improper-named; unlit, inedible, fixed in place, scenery&#x000A;list grouping key: none&#x000A;printed name: "bathroom's floor"&#x000A;printed plural name: "floors"&#x000A;indefinite article: none&#x000A;description: "A tiled floor. "&#x000A;initial appearance: none&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02D87590"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02D87590">
-    <command xml:space="preserve">restart</command>
-    <result xml:space="preserve">Are you sure you want to restart?</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02D86FE0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02D86FE0">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">"Get the hell off of my property!" the man yelled.&#x000A; but we couldn't, we where frozen in fear. Violet screemed, the rest of us didn't have the breath. The cought up to us, grabbed Sean by the color as if he weighed nothing.&#x000A; "Were going allready" Daisy yelled, but the man wouldn't listen. Josh started running again, but tripped on a tree branch, and the man cought him too.&#x000A;HINT: You can use Become (character) to run into another Daisy, Josh, Sean, or Violet. &#x000A;madhouse&#x000A;An Interactive Fiction by Maurits&#x000A;Release 1 / Serial number 151108 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;You could hardly look. The man was holing you by your arm, and suddendly, you where flying. "there you go, no way of gettting out of there!" the man sneered. You seemed to hit some stairs or something, and you kept rolling down, and down, You don't know how long you rolled, but your scared mind didn't reallize when the stairs ended, and now you seem to have been lying under the stairs for quite some time. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn' broken anything. &#x000A;cellar(as Violet)&#x000A;A small concrete hole in the ground, a narrow concrete staircase leads up, with a iron door above it. Another door is set into the ground on the east. The room is lit with some flickering tubelights on the ceiling. &#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02D86E90">
-    <command xml:space="preserve">showme floor</command>
-    <result xml:space="preserve">(the floor)&#x000A;floor - floor&#x000A;location: in the cellar&#x000A;singular-named, improper-named; unlit, inedible, fixed in place, scenery&#x000A;list grouping key: none&#x000A;printed name: "floor"&#x000A;printed plural name: "floors"&#x000A;indefinite article: none&#x000A;description: "Pretty ordinary for the floor of this kind of room. "&#x000A;initial appearance: none&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02E85F88">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">cellar(as Violet)&#x000A;A small concrete hole in the ground, a narrow concrete staircase leads up, with a iron door above it. Another door is set into the ground on the east. The room is lit with some flickering tubelights on the ceiling. &#x000A;&#x000A;You can see a purple key here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

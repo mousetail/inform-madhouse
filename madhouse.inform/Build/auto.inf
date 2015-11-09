@@ -43,7 +43,7 @@ Global Story = BC_0;
 Constant Headline BC_1;
 Constant Story_Author BC_2;
 Release 1;
-Serial "151108";
+Serial "151109";
 
 Default Story 0;
 Default Headline 0;
@@ -13496,19 +13496,8 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Persuasion rule for asking pViolet to try doing something:
-[ R_873 ;
-    if ((( (actor~=player) && (act_requester) && ((actor == I138_pviolet) && (true))))) { ! Runs only when pattern matches
-    if (debug_rules) DB_Rule(R_873, 873);
-    ! [1: persuasion succeeds]
-    RulebookSucceeds(22, RBNO_4); rtrue;
-
-    } else if (debug_rules > 1) DB_Rule(R_873, 873, 'action');
-    rfalse;
-];
-! No specific request
-! Persuasion rule for asking Pjosh to try doing something:
 [ R_874 ;
-    if ((( (actor~=player) && (act_requester) && ((actor == I139_pjosh) && (true))))) { ! Runs only when pattern matches
+    if ((( (actor~=player) && (act_requester) && ((actor == I138_pviolet) && (true))))) { ! Runs only when pattern matches
     if (debug_rules) DB_Rule(R_874, 874);
     ! [1: persuasion succeeds]
     RulebookSucceeds(22, RBNO_4); rtrue;
@@ -13517,9 +13506,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
     rfalse;
 ];
 ! No specific request
-! Persuasion rule for asking pSean to try doing something:
+! Persuasion rule for asking Pjosh to try doing something:
 [ R_875 ;
-    if ((( (actor~=player) && (act_requester) && ((actor == I140_psean) && (true))))) { ! Runs only when pattern matches
+    if ((( (actor~=player) && (act_requester) && ((actor == I139_pjosh) && (true))))) { ! Runs only when pattern matches
     if (debug_rules) DB_Rule(R_875, 875);
     ! [1: persuasion succeeds]
     RulebookSucceeds(22, RBNO_4); rtrue;
@@ -13528,14 +13517,25 @@ Array ActionHappened --> 0 0 0 0 0 0;
     rfalse;
 ];
 ! No specific request
-! Persuasion rule for asking PDaisy to try doing something:
+! Persuasion rule for asking pSean to try doing something:
 [ R_876 ;
-    if ((( (actor~=player) && (act_requester) && ((actor == I141_pdaisy) && (true))))) { ! Runs only when pattern matches
+    if ((( (actor~=player) && (act_requester) && ((actor == I140_psean) && (true))))) { ! Runs only when pattern matches
     if (debug_rules) DB_Rule(R_876, 876);
     ! [1: persuasion succeeds]
     RulebookSucceeds(22, RBNO_4); rtrue;
 
     } else if (debug_rules > 1) DB_Rule(R_876, 876, 'action');
+    rfalse;
+];
+! No specific request
+! Persuasion rule for asking PDaisy to try doing something:
+[ R_877 ;
+    if ((( (actor~=player) && (act_requester) && ((actor == I141_pdaisy) && (true))))) { ! Runs only when pattern matches
+    if (debug_rules) DB_Rule(R_877, 877);
+    ! [1: persuasion succeeds]
+    RulebookSucceeds(22, RBNO_4); rtrue;
+
+    } else if (debug_rules > 1) DB_Rule(R_877, 877, 'action');
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -13585,35 +13585,35 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ];
 ! No specific request
 ! Before looking in the attic for the first time:
-[ R_877 ;
+[ R_878 ;
     if ((PAPR_0() && (((TimesActionHasHappened-->0) == 1) && (ActionCurrentlyHappeningFlag->0)))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_877, 877);
+    if (debug_rules) DB_Rule(R_878, 878);
     ! [1: say ~'here you go' the man yelled 'you will never get out of here untill you rot!' He threw you into the small atic room, you hit your head again the wall, you could just hear the man stomp out the door, locking it behind him. ~]
     say__p=1;ParaContent(); print "~here you go~ the man yelled ~you will never get out of here untill you rot!~ He threw you into the small atic room, you hit your head again the wall, you could just hear the man stomp out the door, locking it behind him. "; .L_Say5; .L_SayX5;
-    } else if (debug_rules > 1) DB_Rule(R_877, 877, 'action');
-    rfalse;
-];
-! No specific request
-! Before looking in the cellar for the first time:
-[ R_878 ;
-    if ((PAPR_1() && (((TimesActionHasHappened-->1) == 1) && (ActionCurrentlyHappeningFlag->1)))) { ! Runs only when pattern matches
-    self = noun;
-    if (debug_rules) DB_Rule(R_878, 878);
-    ! [1: say ~You could hardly look. The man was holing you by your arm, and suddendly, you where flying. 'there you go, no way of gettting out of there!' the man sneered. You seemed to hit some stairs or something, and you kept rolling down, and down, You don't know how long you rolled, but your scared mind didn't reallize when the stairs ended, and now you seem to have been lying under the stairs for quite some time. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn['] broken anything. ~]
-    say__p=1;ParaContent(); print "You could hardly look. The man was holing you by your arm, and suddendly, you where flying. ~there you go, no way of gettting out of there!~ the man sneered. You seemed to hit some stairs or something, and you kept rolling down, and down, You don't know how long you rolled, but your scared mind didn't reallize when the stairs ended, and now you seem to have been lying under the stairs for quite some time. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn";ParaContent(); print "'";ParaContent(); print " broken anything. "; .L_Say6; .L_SayX6;
     } else if (debug_rules > 1) DB_Rule(R_878, 878, 'action');
     rfalse;
 ];
 ! No specific request
-! Before looking in the bathroom for the first time:
+! Before looking in the cellar for the first time:
 [ R_879 ;
-    if ((PAPR_2() && (((TimesActionHasHappened-->2) == 1) && (ActionCurrentlyHappeningFlag->2)))) { ! Runs only when pattern matches
+    if ((PAPR_1() && (((TimesActionHasHappened-->1) == 1) && (ActionCurrentlyHappeningFlag->1)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_879, 879);
+    ! [1: say ~You could hardly look. The man was holing you by your arm, and suddendly, you where flying. 'there you go, no way of gettting out of there!' the man sneered. You seemed to hit some stairs or something, and you kept rolling down, and down, You don't know how long you rolled, but your scared mind didn't reallize when the stairs ended, and now you seem to have been lying under the stairs for quite some time. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn['] broken anything. ~]
+    say__p=1;ParaContent(); print "You could hardly look. The man was holing you by your arm, and suddendly, you where flying. ~there you go, no way of gettting out of there!~ the man sneered. You seemed to hit some stairs or something, and you kept rolling down, and down, You don't know how long you rolled, but your scared mind didn't reallize when the stairs ended, and now you seem to have been lying under the stairs for quite some time. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn";ParaContent(); print "'";ParaContent(); print " broken anything. "; .L_Say6; .L_SayX6;
+    } else if (debug_rules > 1) DB_Rule(R_879, 879, 'action');
+    rfalse;
+];
+! No specific request
+! Before looking in the bathroom for the first time:
+[ R_880 ;
+    if ((PAPR_2() && (((TimesActionHasHappened-->2) == 1) && (ActionCurrentlyHappeningFlag->2)))) { ! Runs only when pattern matches
+    self = noun;
+    if (debug_rules) DB_Rule(R_880, 880);
     ! [1: say ~You put up a good fight, you kept biting, scratching and prying. 'you think you are smart resisting like that? Stupid lemon you are!' the man yelled. He threw you into the nearest door, and then slammed it. You heared sounds like a heavy wooden object was moved in front of the door. 'You will never get out of there, moron!' he yelled as he walked further down the encoing hallway outside. ~]
     say__p=1;ParaContent(); print "You put up a good fight, you kept biting, scratching and prying. ~you think you are smart resisting like that? Stupid lemon you are!~ the man yelled. He threw you into the nearest door, and then slammed it. You heared sounds like a heavy wooden object was moved in front of the door. ~You will never get out of there, moron!~ he yelled as he walked further down the encoing hallway outside. "; .L_Say7; .L_SayX7;
-    } else if (debug_rules > 1) DB_Rule(R_879, 879, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_880, 880, 'action');
     rfalse;
 ];
 ! From "locksmith" by emily short
@@ -13648,13 +13648,13 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ];
 ! No specific request
 ! Before looking in the garage:
-[ R_881 ;
+[ R_882 ;
     if ((((action ==##Look) &&  (actor==player) && ((real_location == I150_garage) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_881, 881);
+    if (debug_rules) DB_Rule(R_882, 882);
     ! [1: say ~You must have fainted at some point, because at some point, you heared the man saying 'Now I am going to leave this old place, and go on a long holiday, good thing you showed up the day before the taxes where due!' You heared the sound of a car drive away, you look arround. ~]
     say__p=1;ParaContent(); print "You must have fainted at some point, because at some point, you heared the man saying ~Now I am going to leave this old place, and go on a long holiday, good thing you showed up the day before the taxes where due!~ You heared the sound of a car drive away, you look arround. "; .L_Say9; .L_SayX9;
-    } else if (debug_rules > 1) DB_Rule(R_881, 881, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_882, 882, 'action');
     rfalse;
 ];
 ! From "locksmith" by emily short
@@ -13800,13 +13800,15 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! Rules in rulebook: Instead (B20_instead)
 ! ----------------------------------------------------------------------------------------------------
-! Rule 1/4 ! Instead of an actor going a direction ( called dir ) in the presence of a half door ( called dr ):
+! Rule 1/5 ! Instead of an actor going a direction ( called dir ) in the presence of a half door ( called dr ):
 !   >>> III.2.3 - Action/Where/In The Presence Of >>>
-! Rule 2/4 ! Instead of touching the bathroom the first time:
+! Rule 2/5 ! Instead of touching the bathroom the first time:
 !   >>> I - Number of aspects constrained >>>
-! Rule 3/4 ! Instead of putting something which is not a passkey on a keychain ( this is the limiting keychains rule ):
+! Rule 3/5 ! Instead of putting something which is not a passkey on a keychain ( this is the limiting keychains rule ):
+!   >>> III.3.2 - Action/What/Thing Acted On >>>
+! Rule 4/5 ! Instead of putting something on a floor:
 !   >>> III.3.1 - Action/What/Second Thing Acted On >>>
-! Rule 4/4 ! Instead of an actor entering a base half door ( this is the entering a half door rule ):
+! Rule 5/5 ! Instead of an actor entering a base half door ( this is the entering a half door rule ):
 ! ----------------------------------------------------------------------------------------------------
 ! From "double doors" by Maurits van Riezen
 ! No specific request
@@ -13831,16 +13833,16 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ];
 ! No specific request
 ! Instead of touching the bathroom the first time:
-[ R_880 ;
+[ R_881 ;
     if ((PAPR_3() && (((TimesActionHasHappened-->3) == 1) && (ActionCurrentlyHappeningFlag->3)))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_880, 880);
+    if (debug_rules) DB_Rule(R_881, 881);
     ! [1: say ~You search the walls, and finally find a lightswitch.~]
     say__p=1;ParaContent(); print "You search the walls, and finally find a lightswitch."; new_line; .L_Say13; .L_SayX13;
     ! [2: now the bathroom is not dark]
     (Adj_52_t3_v10(I165_bathroom));
     RulebookFails(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_880, 880, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_881, 881, 'action');
     rfalse;
 ];
 ! From "locksmith" by emily short
@@ -13854,6 +13856,18 @@ Array ActionHappened --> 0 0 0 0 0 0;
     say__p=1;ParaContent(); print (TEXT_TY_Say) (TX_R_136); new_line; .L_Say14; .L_SayX14;
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_836, 836, 'action');
+    rfalse;
+];
+! No specific request
+! Instead of putting something on a floor:
+[ R_873 ;
+    if ((((action ==##PutOn) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second ofclass K21_floor))))) { ! Runs only when pattern matches
+    self = noun;
+    if (debug_rules) DB_Rule(R_873, 873);
+    ! [1: try dropping the noun instead]
+    TryAction(0, player, ##Drop, noun, 0);; rtrue;
+    RulebookFails(); rtrue;
+    } else if (debug_rules > 1) DB_Rule(R_873, 873, 'action');
     rfalse;
 ];
 ! From "double doors" by Maurits van Riezen
@@ -15868,6 +15882,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! No specific request
 ! Check an actor putting something on ( this is the can't put onto what's not a supporter rule ):
 [ R_127 ;
+    if ((((noun ofclass K21_floor)))) rfalse;
     if ((((act_requester==nothing) && ((noun ofclass K2_thing))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_127, 127);
@@ -18214,13 +18229,13 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out looking under the toilet:
-[ R_883 ;
+[ R_884 ;
     if ((( (actor==player) && ((noun == I171_bathroom_toilet) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_883, 883);
+    if (debug_rules) DB_Rule(R_884, 884);
     ! [1: say ~Behind the toilet you find a small tap, connected to a pipe, connected to the flush box. ~ instead]
     say__p=1;ParaContent(); print "Behind the toilet you find a small tap, connected to a pipe, connected to the flush box. "; rtrue; .L_Say174; .L_SayX174; rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_883, 883, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_884, 884, 'action');
     rfalse;
 ];
 ! From the Standard Rules
@@ -18253,13 +18268,13 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Report someone looking under the toilet:
-[ R_884 ;
+[ R_885 ;
     if ((( (actor~=player) && (act_requester==nothing) && ((actor ofclass K8_person)) && ((noun == I171_bathroom_toilet) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_884, 884);
+    if (debug_rules) DB_Rule(R_885, 885);
     ! [1: say ~[the person asked] [find] a small tap, which seems to be connected to the flush box. ~ instead]
     say__p=1;ParaContent(); print (the) actor;ParaContent(); print " ";ConjugateVerb_31(CV_POS, PNToVP(), story_tense); say__p=1; ParaContent(); print " a small tap, which seems to be connected to the flush box. "; rtrue; .L_Say176; .L_SayX176; rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_884, 884, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_885, 885, 'action');
     rfalse;
 ];
 ! From the Standard Rules
@@ -20893,10 +20908,10 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Report turning the tap of the narrow pipe:
-[ R_882 ;
+[ R_883 ;
     if ((( (actor==player) && ((noun == I164_tap_of_the_narrow_pipe) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_882, 882);
+    if (debug_rules) DB_Rule(R_883, 883);
     ! [1: if the noun is on begin]
     if ((((Adj_90_t1_v10(noun))))){
         ! [2: say ~You turn on the tap. You hear the gurgling noise of air being pushed out the tap. ~ instead]
@@ -20904,12 +20919,12 @@ Array ActionHappened --> 0 0 0 0 0 0;
         ! [3: end if]
         }
 
-        } else if (debug_rules > 1) DB_Rule(R_882, 882, 'action');
+        } else if (debug_rules > 1) DB_Rule(R_883, 883, 'action');
         rfalse;
 ];
 ! No specific request
 ! Report turning the sink tap:
-[ R_887 I7RBLK;
+[ R_888 I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(0);
     @push formal_par0;
@@ -20921,7 +20936,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 [ KERNEL_8 ;
     if ((( (actor==player) && ((noun == I170_sink_tap) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_887, 887);
+    if (debug_rules) DB_Rule(R_888, 888);
     ! [1: if the noun is on begin]
     if ((((Adj_90_t1_v10(noun))))){
         ! [2: unless the noun flows begin]
@@ -20936,7 +20951,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
                     ((
                         ((((((formal_par0 ofclass K20_tap) && (formal_par0 ofclass K20_tap))))) && ((
                         formal_rv = ((PHR_872_r7 (formal_par0)))) | 1)
-                        )|| (ArgumentTypeFailed(241))
+                        )|| (ArgumentTypeFailed(246))
 
                     ))
                 +
@@ -20960,7 +20975,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
         ! [7: end if]
         }
 
-        } else if (debug_rules > 1) DB_Rule(R_887, 887, 'action');
+        } else if (debug_rules > 1) DB_Rule(R_888, 888, 'action');
         rfalse;
 ];
 ! No specific request
@@ -22109,10 +22124,10 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! check flushing the toilet:
-[ R_885 ;
+[ R_886 ;
     if ((( (actor==player) && ((noun == I171_bathroom_toilet) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_885, 885);
+    if (debug_rules) DB_Rule(R_886, 886);
     ! [1: unless small toilet tap flows begin]
     if (~~(((PHR_872_r7 (I172_small_toilet_tap))))){
         ! [2: say ~You pull the appropriate lever, but nothing seems to happen. ~ instead]
@@ -22120,7 +22135,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
         ! [3: end unless]
         }
 
-        } else if (debug_rules > 1) DB_Rule(R_885, 885, 'action');
+        } else if (debug_rules > 1) DB_Rule(R_886, 886, 'action');
         rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -22134,13 +22149,13 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! carry out flushing the toilet:
-[ R_886 ;
+[ R_887 ;
     if ((( (actor==player) && ((noun == I171_bathroom_toilet) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_886, 886);
+    if (debug_rules) DB_Rule(R_887, 887);
     ! [1: say ~You flush the toilet. ~ instead]
     say__p=1;ParaContent(); print "You flush the toilet. "; rtrue; .L_Say325; .L_SayX325; rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_886, 886, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_887, 887, 'action');
     rfalse;
 ];
 ! No specific request
@@ -25076,14 +25091,6 @@ Constant B8_every_turn = EMPTY_RULEBOOK;
     original_deadflag ! saved state
     ;
     original_deadflag = deadflag;
-    rv = R_873();
-    if (rv) {
-        if (rv == 2) return reason_the_action_failed;
-        return R_873;
-    }
-    latest_rule_result-->0 = 0;
-    if (original_deadflag ~= deadflag) return 0;
-    if (say__p) RulebookParBreak(forbid_breaks);
     rv = R_874();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
@@ -25104,6 +25111,14 @@ Constant B8_every_turn = EMPTY_RULEBOOK;
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
         return R_876;
+    }
+    latest_rule_result-->0 = 0;
+    if (original_deadflag ~= deadflag) return 0;
+    if (say__p) RulebookParBreak(forbid_breaks);
+    rv = R_877();
+    if (rv) {
+        if (rv == 2) return reason_the_action_failed;
+        return R_877;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 4 rule(s)
@@ -25128,14 +25143,6 @@ Constant B18_unsuccessful_attempt_by = EMPTY_RULEBOOK;
     if (action == ##Look) {
         if (original_deadflag ~= deadflag) return 0;
         if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_877();
-        if (rv) {
-            if (rv == 2) return reason_the_action_failed;
-            return R_877;
-        }
-        latest_rule_result-->0 = 0;
-        if (original_deadflag ~= deadflag) return 0;
-        if (say__p) RulebookParBreak(forbid_breaks);
         rv = R_878();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
@@ -25148,6 +25155,14 @@ Constant B18_unsuccessful_attempt_by = EMPTY_RULEBOOK;
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
             return R_879;
+        }
+        latest_rule_result-->0 = 0;
+        if (original_deadflag ~= deadflag) return 0;
+        if (say__p) RulebookParBreak(forbid_breaks);
+        rv = R_880();
+        if (rv) {
+            if (rv == 2) return reason_the_action_failed;
+            return R_880;
         }
         latest_rule_result-->0 = 0;
     } else {
@@ -25168,10 +25183,10 @@ Constant B18_unsuccessful_attempt_by = EMPTY_RULEBOOK;
     if (action == ##Look) {
         if (original_deadflag ~= deadflag) return 0;
         if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_881();
+        rv = R_882();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_881;
+            return R_882;
         }
         latest_rule_result-->0 = 0;
     } else {
@@ -25266,10 +25281,10 @@ Constant B18_unsuccessful_attempt_by = EMPTY_RULEBOOK;
     if (action == ##Touch) {
         if (original_deadflag ~= deadflag) return 0;
         if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_880();
+        rv = R_881();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_880;
+            return R_881;
         }
         latest_rule_result-->0 = 0;
     } else {
@@ -25282,6 +25297,14 @@ Constant B18_unsuccessful_attempt_by = EMPTY_RULEBOOK;
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
             return R_836;
+        }
+        latest_rule_result-->0 = 0;
+        if (original_deadflag ~= deadflag) return 0;
+        if (say__p) RulebookParBreak(forbid_breaks);
+        rv = R_873();
+        if (rv) {
+            if (rv == 2) return reason_the_action_failed;
+            return R_873;
         }
         latest_rule_result-->0 = 0;
     } else {
@@ -25299,7 +25322,7 @@ Constant B18_unsuccessful_attempt_by = EMPTY_RULEBOOK;
     } else {
         if (say__p) RulebookParBreak(forbid_breaks);
     }
-    return 0; ! 4 rule(s)
+    return 0; ! 5 rule(s)
 ];
 Constant B21_check = EMPTY_RULEBOOK;
 Constant B22_carry_out = EMPTY_RULEBOOK;
@@ -26910,10 +26933,10 @@ Constant B169_check_looking_under = EMPTY_RULEBOOK;
     original_deadflag ! saved state
     ;
     original_deadflag = deadflag;
-    rv = R_883();
+    rv = R_884();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_883;
+        return R_884;
     }
     latest_rule_result-->0 = 0;
     if (original_deadflag ~= deadflag) return 0;
@@ -26932,10 +26955,10 @@ Constant B169_check_looking_under = EMPTY_RULEBOOK;
     original_deadflag ! saved state
     ;
     original_deadflag = deadflag;
-    rv = R_884();
+    rv = R_885();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_884;
+        return R_885;
     }
     latest_rule_result-->0 = 0;
     if (original_deadflag ~= deadflag) return 0;
@@ -28009,18 +28032,18 @@ Constant B245_carry_out_pushing = EMPTY_RULEBOOK;
     original_deadflag ! saved state
     ;
     original_deadflag = deadflag;
-    rv = R_882();
+    rv = R_883();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_882;
+        return R_883;
     }
     latest_rule_result-->0 = 0;
     if (original_deadflag ~= deadflag) return 0;
     if (say__p) RulebookParBreak(forbid_breaks);
-    rv = R_887();
+    rv = R_888();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_887;
+        return R_888;
     }
     latest_rule_result-->0 = 0;
     if (original_deadflag ~= deadflag) return 0;
@@ -28840,10 +28863,10 @@ Constant B377_report_becoming = EMPTY_RULEBOOK;
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
-    rv = R_885();
+    rv = R_886();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_885;
+        return R_886;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
@@ -28854,10 +28877,10 @@ Constant B377_report_becoming = EMPTY_RULEBOOK;
     original_deadflag ! saved state
     ;
     original_deadflag = deadflag;
-    rv = R_886();
+    rv = R_887();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_886;
+        return R_887;
     }
     latest_rule_result-->0 = 0;
     if (original_deadflag ~= deadflag) return 0;
@@ -33500,21 +33523,22 @@ Array RulebookNames -->
         if (R == R_869) { print "Carry out an actor RoomTouching"; return; } ! rule 398
         if (R == R_870) { print "Carry out turning a tap"; return; } ! rule 399
         if (R == R_871) { print "Report turning a tap"; return; } ! rule 400
-        if (R == R_873) { print "Persuasion rule for asking pViolet to try doing something"; return; } ! rule 401
-        if (R == R_874) { print "Persuasion rule for asking Pjosh to try doing something"; return; } ! rule 402
-        if (R == R_875) { print "Persuasion rule for asking pSean to try doing something"; return; } ! rule 403
-        if (R == R_876) { print "Persuasion rule for asking PDaisy to try doing something"; return; } ! rule 404
-        if (R == R_877) { print "Before looking in the attic for the first time"; return; } ! rule 405
-        if (R == R_878) { print "Before looking in the cellar for the first time"; return; } ! rule 406
-        if (R == R_879) { print "Before looking in the bathroom for the first time"; return; } ! rule 407
-        if (R == R_880) { print "Instead of touching the bathroom the first time"; return; } ! rule 408
-        if (R == R_881) { print "Before looking in the garage"; return; } ! rule 409
-        if (R == R_882) { print "Report turning the tap of the narrow pipe"; return; } ! rule 410
-        if (R == R_883) { print "Carry out looking under the toilet"; return; } ! rule 411
-        if (R == R_884) { print "Report someone looking under the toilet"; return; } ! rule 412
-        if (R == R_885) { print "check flushing the toilet"; return; } ! rule 413
-        if (R == R_886) { print "carry out flushing the toilet"; return; } ! rule 414
-        if (R == R_887) { print "Report turning the sink tap"; return; } ! rule 415
+        if (R == R_873) { print "Instead of putting something on a floor"; return; } ! rule 401
+        if (R == R_874) { print "Persuasion rule for asking pViolet to try doing something"; return; } ! rule 402
+        if (R == R_875) { print "Persuasion rule for asking Pjosh to try doing something"; return; } ! rule 403
+        if (R == R_876) { print "Persuasion rule for asking pSean to try doing something"; return; } ! rule 404
+        if (R == R_877) { print "Persuasion rule for asking PDaisy to try doing something"; return; } ! rule 405
+        if (R == R_878) { print "Before looking in the attic for the first time"; return; } ! rule 406
+        if (R == R_879) { print "Before looking in the cellar for the first time"; return; } ! rule 407
+        if (R == R_880) { print "Before looking in the bathroom for the first time"; return; } ! rule 408
+        if (R == R_881) { print "Instead of touching the bathroom the first time"; return; } ! rule 409
+        if (R == R_882) { print "Before looking in the garage"; return; } ! rule 410
+        if (R == R_883) { print "Report turning the tap of the narrow pipe"; return; } ! rule 411
+        if (R == R_884) { print "Carry out looking under the toilet"; return; } ! rule 412
+        if (R == R_885) { print "Report someone looking under the toilet"; return; } ! rule 413
+        if (R == R_886) { print "check flushing the toilet"; return; } ! rule 414
+        if (R == R_887) { print "carry out flushing the toilet"; return; } ! rule 415
+        if (R == R_888) { print "Report turning the sink tap"; return; } ! rule 416
 
 		print "(nameless rule at address ", R, ")";
 	}

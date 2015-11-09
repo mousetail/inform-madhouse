@@ -97,6 +97,11 @@ A wall is a kind of thing. A wall is usually scenery. The description of a wall 
 A ceiling is a kind of thing. A ceiling is usually scenery. The description of a ceiling usually is "Nothing special is visible about
 the ceiling here. ". Every indoor room contains a ceiling (called its ceiling).
 
+Instead of putting something on a floor:
+	try dropping the noun instead.
+
+The can't put onto what's not a supporter rule does nothing if the noun is a floor.
+
 Chapter 2 - Responses
 
 the print empty inventory rule response (A) is "[We] [are] empty handed.".
