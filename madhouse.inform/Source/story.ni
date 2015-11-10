@@ -119,12 +119,41 @@ Report reading a newspaper:
 	alien sightings by a professor at DIU[or]
 	a old man discussing how much he enjoys playing board games with his grandchilderen[or]
 	a new IF novel has been published [or]
+	a new phone model promising double internet speeds [or]
 	a new store opening in Gurgoun[at random]. " instead.
 
 Report reading something:
 	try examining the noun.
 
-A newspaper is a kind of thing. The description of a newspaper is usually "White paper, with some text. ".
+A newspaper is a kind of surface. The description of a newspaper is usually "White paper, with some text. ". A newspaper is usually portable.
+
+Section 7 - Sliding under
+
+Sliding it under is an action applying to two things.
+Understand "Slide/put/push [something] under/below/beneath [something]" as sliding it under.
+
+Report sliding something under something:
+	say "You can't slide something under [the second noun]".
+	
+Section 8 - Pencils
+
+A stationary is a kind of thing.
+
+A pencil is a kind of stationary. The description of a pencil is usually "A long, grey pencil. Sadly, it needs sharpening. ".
+
+A blue pen is a kind of stationary. The description of a pen is usually "A long blue pen, out of ink, sadly. ".
+A black pen is a kind of stationary. The description of a black pen is usually "A fat, black pen, with a big dent. ".
+
+A pencil case is a kind of container.
+Every pencil case contains 3 pencils, 2 blue pens, and 1 black pen.
+
+Section 9 - Poking
+
+Poking it with is an action applying to two things.
+Understand "Poke/push/shov [something] with [something]".
+
+Report poking something with something:
+	say "Poke![new line]Poke!".
 
 Chapter 2 - Responses
 
@@ -297,5 +326,49 @@ quite well, it seems to be some kind of bedroom. ".
 
 Section 4 - the garage
 
-7 newspapers are in the garage.
+The virtual passage is a privately-named scenery container. The printed name of the virtual passage is "The crack under the door". Understand "crack" as the virtual passage.
+Understand "gap" as the virtual passage.
 
+7 newspapers are in the garage. A pencil case is in the garage.
+
+The garage door is a half door in the garage. The facing of it is south. It is closed and locked.
+
+The small door is a half door in the garage. The facing if it is east. It is closed and locked. The description of it is "A dented wooden door. There is a sizeable gap between the
+
+Report sliding something under the small door:
+	say "That is to fat to slide under the door! " instead.
+
+Carry out sliding a newspaper under the small door:
+	now the newspaper is in the virtual passage.
+Report sliding a newspaper under the small door:
+	"You slide the newspaper in the crack under the door. " instead.
+Check inserting something into the virtual passage:
+	if the noun is not a newspaper:
+		say "That is to fat to fit under the door! " instead.
+
+The keyhole is part of the small door. It is a container.
+Check inserting something into the keyhole:
+	if the noun is the plain key:
+		say "You can just type 'unlock door with key'" instead;
+	if the noun is a passkey:
+		say "That key dousn[']t fit!" instead;
+	else:
+		say "Thats not a key!" instead;
+The plain key is in the keyhole.
+The description of it is "A very simple key, basically a circle, (a thorus to be techical), a bar runing doun, and two spokes of the same lenght.".
+Check taking the plain key:
+	if the plain key is in the keyhole:
+		say "The hole is to small to reach the key." instead.
+Before poking the key with something for the first time:
+	say "(I recomend saving before you try this, would you like to save first?)";
+	if the player consents:
+		try saving.
+Carry out poking the plain key with stationary:
+	if the key is in the key hole:
+		now the key is in the virtual passage.
+Report poking the plain key with stationary plain key:
+	if the kay was in the key hole:
+		say "You poke the key, and it falls out the other side. "
+
+
+The bs small door is a half door. The printed name if it is "small door". The description of it is "A door".
