@@ -2,6 +2,7 @@
 
 include locksmith by emily short.
 include double doors by Maurits van Riezen.
+Include Small Kindnesses by Aaron Reed.
 
 Chapter 1 - Basic Rules
 
@@ -18,6 +19,14 @@ When play begins:
 	and the man cought him too.";
 	say "HINT: You can use Become (character) to run into another Daisy, Josh, Sean, or Violet. "
 
+Section - Special Scenery
+
+A thing can be pullable.
+
+The can't pull what's fixed in place rule does nothing if the noun is pullable.
+The can't push what's fixed in place rule does nothing if the noun is pullable.
+The can't pull scenery rule does nothing if the noun is pullable.
+The can't push scenery rule does nothing if the noun is pullable.
 
 Section 2 - Becoming
 
@@ -102,13 +111,18 @@ Instead of putting something on a floor:
 
 The can't put onto what's not a supporter rule does nothing if the noun is a floor.
 
+A brick room is a kind of indoor room.
+The description of a brick room's floor is usually "The floor is made of rough grey cobbles. ".
+The description of a brick room's walls is usually "The wall is made of flattened grey stone. ".
+The description of a brick room's ceiling is usually "It is made of long flat stones, supporeted by wooden beams. ".
+
 Section 6 - Newspapers
 
 Understand the command "read" as something new.
 
 Reading is an action applying to one visible thing and requiring light.
 
-Understand "read [something]" as reading.
+Understand "read [something preferably held]" as reading.
 
 Report reading a newspaper:
 	say "Skimming the newspaper, you find a story about[one of] the murder of a african dictator[or]
@@ -125,13 +139,14 @@ Report reading a newspaper:
 Report reading something:
 	try examining the noun.
 
-A newspaper is a kind of surface. The description of a newspaper is usually "White paper, with some text. ". A newspaper is usually portable.
+A newspaper is a kind of supporter. The description of a newspaper is usually "White paper, with some text. ". A newspaper is usually portable.
 
 Section 7 - Sliding under
 
-Sliding it under is an action applying to two things.
-Understand "Slide/put/push [something] under/below/beneath [something]" as sliding it under.
-
+Sliding it under is an action applying to two things. [/put/push]
+Understand "Slide [something preferably held] under/below/beneath [something]" as sliding it under.
+Understand "put [something preferably held] under/below/beneath [something]" as sliding it under.
+Understand "push [something preferably held] under/below/benath [something]" as sliding it under.
 Report sliding something under something:
 	say "You can't slide something under [the second noun]".
 	
@@ -149,17 +164,30 @@ Every pencil case contains 3 pencils, 2 blue pens, and 1 black pen.
 
 Section 9 - Poking
 
-Poking it with is an action applying to two things.
-Understand "Poke/push/shov [something] with [something]".
+Poking it with is an action applying to two things. [/push/shov]
+Understand "Poke [something] with [something preferably held]" as poking it with..
+Understand "Push [something] with [something preferably held]" as poking it with.
+Understand "Shov [something] with [something preferably held]" as poking it with.
 
 Report poking something with something:
-	say "Poke![new line]Poke!".
+	say "Poke![line break]Poke!".
+	
+Section 10 - Action variables
+
+The taking action has a object called place taken from.
+
+Setting action variables for taking: 
+	now place taken from is the holder of the noun.
+	
+Section 11 - Inanimate
+
+Definition: A thing is inanimate if it is not a person.
 
 Chapter 2 - Responses
 
 the print empty inventory rule response (A) is "[We] [are] empty handed.".
 the can't take other people rule response (A) is "You tug at [the noun], but [they] won't move.".
-the standard report taking rule response (A) is "Yours".
+the standard report taking rule response (A) is "Yours.".
 the list writer internal rule response (P) is "locked".
 the parser error internal rule response (E) is "Just how do you expect to get a thing like that here?".
 the yes or no question internal rule response (A) is "Its not like its a difficult question, a 'yes' or a 'no' would be fine.".
@@ -232,18 +260,10 @@ Instead of touching the bathroom the first time:
 	say "You search the walls, and finally find a lightswitch.";
 	now the bathroom is not dark.
 
-Before looking in the  garage:
-	say "You must have fainted, because at some point,
-	you heared the man saying 'Now I am going to leave this old
-	place, and go on a long holiday, good thing you showed up the
-	day before my holiday to Madagascar.!' You heared the sound of a car drive away,
-	you look arround. ".
 
-The garage is a room. pDaisy is here.
 
-the yellow chain is carried by pDaisy. The yellow chain is a keychain.
 
-The purple key is in the garage. It is a passkey.
+The purple key is in the cellar. It is a passkey.
 
 Chapter 4 - Content
 
@@ -321,27 +341,69 @@ The broad box is in the attic. The pair of socks is in the box. The box is close
 
 The roof is a room. The outside attic window is a half door. It is in the roof. It is open. The outside attic window is opposite to the inside attic window.
 
-The description of the attic's floor is "It's made of wooden beams, with pretty wide cracks. You can see the room below you
-quite well, it seems to be some kind of bedroom. ".
 
-Section 4 - the garage
 
-The virtual passage is a privately-named scenery container. The printed name of the virtual passage is "The crack under the door". Understand "crack" as the virtual passage.
+The description of the attic's floor is "The floor is made of very old planks, nailed to a layer of beams below.  One plank seems a bit loose. "
+
+The loose board is scenery in the attic. understand "loose plank" or "plank" as the loose board. The loose board is pullable.
+
+Carry out pulling the loose board:
+	now the attic hole is in the attic.
+Report pulling the loose board:
+	say "You pull at the board, and it comes of the ground a little, you pull a little more, and then the plank snaps in half, laving a gaping hole in the floor. ".
+The attic hole is a privately-named half door. The facing of it is down. The printed name of the attic hole is "hole in the floor".  Understand "hole" or "gap" or "hole in floor" or "gap in floor" as the attic hole. The attic hole is scenery.
+
+Before entering the attic hole for the first time:
+	say "You first look down, but then decide not to and just jump. Luckily, you land on a bed after falling a couple of meters, you bounce of the bad and land in a aquard heap on the floor. "
+
+The green bedroom is a indoor room. "A square room, newly painted, and with a nice, comby bed. Next to the bed is a cabinet [if there is a thing on the cabinet]on which is [the list of things on the cabinet with indefinite articles].[else].[end if]"
+
+
+
+The cabinet is in the green bedroom.
+
+The bedroom hole is a privately-named scenery half door in the bedroom.  The printed name of it is "hole in the ceiling". Understand "hole" or "gap" or "hole in the ceiling" or "gap in the ceiling" as the bedroom hole. The bedroom hole is opposite to the attic hole. The facing of the bedroom hole is up.
+
+The green bed is a enterable scenery supporter in the bedroom.
+
+Door entering the bedroom hole:
+	say "The hole in the ceiling to high to reach!" instead.
+
+Section 4 - the stable
+
+Before looking in the stable for the first time:
+	say "You must have fainted, because at some point,
+	you heared the man saying 'Now I am going to leave this old
+	place, and go on a long holiday, good thing you showed up the
+	day before my holiday to Madagascar.!' You heared the sound of a car drive away,
+	you look arround. ".
+
+The stable is a indoor room.  "This room probably used to contain all the old knights finest horses, but some later resident has used this place to keep some of his trash. A big double door [if the stable door is closed]leads south[else]looks out over the dark garden to the south[end if], while a small door [if the small door is closed]is set into the east wall.[else]reveals the passageway to the east. [end if][if there is a not scenery inanimate thing in the stable]A heap of trash, including [the list of not scenery things that are not a person in the stable with indefinite articles] has been dumped in the corner. [end if]".
+pDaisy is here.
+
+The yellow chain is carried by pDaisy. The yellow chain is a keychain.
+
+The virtual passage is a privately-named scenery container. The printed name of the virtual passage is "the crack under the door". Understand "crack" as the virtual passage. It is in the stable.
 Understand "gap" as the virtual passage.
 
-7 newspapers are in the garage. A pencil case is in the garage.
+1 newspapers are in the stable. "A newspaper is strewn over the floor. ". One pencil case is in the stable.
 
-The garage door is a half door in the garage. The facing of it is south. It is closed and locked.
+The rubber tyre is in the stable. The printed name of the rubber tyre is "tyre".
 
-The small door is a half door in the garage. The facing if it is east. It is closed and locked. The description of it is "A dented wooden door. There is a sizeable gap between the
+A cardboard box is in the stable. It is closed. In it are five newspapers.
+
+The stable door is a scenery half door in the stable. The facing of the stable door is south. The stable door is closed and locked.
+
+The small door is a scenery half door in the stable. The facing of it is east. The small door is closed and locked. The description of it is "A dented wooden door. A simple lock is in the door, [if the plain key is in the keyhole]the man
+seems to have left the key in the other side of the door. [end if]There is a sizable gap between the door and the floor.".
 
 Report sliding something under the small door:
 	say "That is to fat to slide under the door! " instead.
 
 Carry out sliding a newspaper under the small door:
-	now the newspaper is in the virtual passage.
+	move the noun to the virtual passage.
 Report sliding a newspaper under the small door:
-	"You slide the newspaper in the crack under the door. " instead.
+	say "You slide the newspaper in the crack under the door. " instead.
 Check inserting something into the virtual passage:
 	if the noun is not a newspaper:
 		say "That is to fat to fit under the door! " instead.
@@ -350,25 +412,68 @@ The keyhole is part of the small door. It is a container.
 Check inserting something into the keyhole:
 	if the noun is the plain key:
 		say "You can just type 'unlock door with key'" instead;
-	if the noun is a passkey:
+	else if the noun is a passkey:
 		say "That key dousn[']t fit!" instead;
 	else:
-		say "Thats not a key!" instead;
-The plain key is in the keyhole.
+		say "Thats not a key!" instead.
+The plain key is in the keyhole. The plain key is a passkey. It unlocks the small door.
 The description of it is "A very simple key, basically a circle, (a thorus to be techical), a bar runing doun, and two spokes of the same lenght.".
 Check taking the plain key:
 	if the plain key is in the keyhole:
-		say "The hole is to small to reach the key." instead.
-Before poking the key with something for the first time:
+		say "The keyhole is to small to reach the key." instead.
+
+Rule for supplying a missing second noun while poking something with: 
+	If the player carries stationary:
+		now the second noun is the first thing held by the player.
+
+Before poking the key with stationary for the first time:
 	say "(I recomend saving before you try this, would you like to save first?)";
 	if the player consents:
-		try saving.
+		try saving the game.
+Carry out poking the plain key with something:
+	if the second noun is not stationary:
+		say "[The second noun] is to fat to fit into the key hole. " instead.
+Instead of pulling the newspaper:
+	if the noun is in the virtual passage:
+		try taking the noun instead.
+Carry out poking the plain key with something:
+	if the second noun is not stationary and the keyhole encloses the plain key:
+		say "That is to big to fit into the keyhole and reach the  key".
 Carry out poking the plain key with stationary:
-	if the key is in the key hole:
-		now the key is in the virtual passage.
-Report poking the plain key with stationary plain key:
-	if the kay was in the key hole:
-		say "You poke the key, and it falls out the other side. "
+	if the keyhole encloses the noun:
+		let papers be the list of newspapers in the virtual passage;
+		if the number of entries in papers > 0:
+			let bl be entry 1 from papers;
+			now the plain key is on the bl;
+		else:
+			now the noun is in the virtual passage;
+		stop the action.
 
+First report poking the plain key with stationary:
+	if the plain key was in the keyhole:
+		say "You poke the key, and it falls out the other side. " instead.
+Instead of taking something in the stable:
+	if the noun is in the virtual passage:
+		unless the noun is a newspaper:
+			say "The gap under the door isn't wide enough for you to reach [the noun]" instead;
+	continue the action.
+After taking a newspaper (called br):
+	if the place taken from is virtual passage and the plain key is on br:
+		say "You find the key on the newspaper! It falls on the floor after you take the paper. ";
+		now the plain key is in the stable;
+	else:
+		continue the action.
 
-The bs small door is a half door. The printed name if it is "small door". The description of it is "A door".
+The west door is a half door. The printed name of it is "west door". The description of it is "A dented wooden door". It is opposite to the small door. The facing of the west door is west.
+
+Section 5 - The hallway
+
+The  1st floor east hallway is a brick room. "A long and clausrophobically passage running through the oldest part of the castle. The walls are are made of roughly cut grey stone, the floor is rough, and hurts your feet to walk on. Halfway the passage, a tall door leads north, and both the east and west end in doors. ".
+The west door is here. 
+The tall door is in the 1st floor east hallway. It is a half door. It is closed. The facing of it is east.
+The description of the tall door is
+"What makes this door strange is that it's taller then the room it is in. The ceiling cuts your view of the top of the door. ".
+
+The kitchen is a brick room. "A very old room, made of the same old brick as the passage outside.  A counter sits in the center of the room. On one wall is a stove, with a fireplace underneath. ".
+The tall door bs is a half door. The printed name of it is "tall door". The description of it is "The door is about as tall as the room, [if open]the bottom half of the door shows a narrow passage. [else]it fits nicely into the arch pattern drawn on the walls. [end if]". It is opposite to the tall door.
+The description of the kithcen's walls is "The walls are made of rough stone, arrayed in a repeating arch-like pattern. ".
