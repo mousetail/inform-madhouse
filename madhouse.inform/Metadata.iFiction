@@ -6,18 +6,19 @@
             <format>glulx</format>
         </identification>
         <bibliographic>
-            <title>madhouse</title>
-            <author>Maurits</author>
-            <headline>An Interactive Fiction</headline>
-            <genre>Fiction</genre>
+            <title>Madhouse</title>
+            <author>Maurits van Riezen</author>
+            <headline>A semi-coherent collection of puzzles</headline>
+            <genre>Mystery</genre>
             <firstpublished>2015</firstpublished>
+            <description>4 characters try to excape from an old mansion, by solving various puzzles.</description>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2015-11-11</releasedate>
+                    <releasedate>2015-11-22</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6L38</compilerversion>
@@ -27,10 +28,10 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>6L38</generatorversion>
-            <originated>2015-11-11</originated>
+            <originated>2015-11-22</originated>
         </colophon>
         <glulx>
-            <serial>151111</serial>
+            <serial>151122</serial>
             <release>1</release>
             <compiler>Inform 7 build 6L38</compiler>
         </glulx>

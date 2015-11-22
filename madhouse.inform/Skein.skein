@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x02DA2750" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x02E32750" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x02E87B88"/>
-  <item nodeId="node-0x02DA2750">
+  <activeNode nodeId="node-0x02E57050"/>
+  <item nodeId="node-0x02E32750">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">"Get the hell off of my property!" the man yelled.&#x000A; but we couldn't, we where frozen in fear. Violet screamed, the rest of us didn't have the breath. The man cought up to us, grabbed Sean by his color as if he weighed nothing.&#x000A; "Were going allready" Daisy yelled, but the man wouldn't listen. Josh started running again, but tripped on a tree branch, and the man cought him too.&#x000A;HINT: You can use Become (character) to run into another Daisy, Josh, Sean, or Violet. &#x000A;madhouse&#x000A;An Interactive Fiction by Maurits&#x000A;Release 1 / Serial number 151111 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;You could hardly look. The man was holing you by your arm, and suddendly, you where flying. "there you go, no way of gettting out of there!" the man sneered. You seemed to hit some stairs, and you kept rolling down, and down. You thought you where still rolling when you opened your eyes, but instead you find yourself lying still under a flight of stairs. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn' broken anything. &#x000A;cellar(as Violet)&#x000A;A small concrete hole in the ground, a narrow concrete staircase leads up, with a iron door above it. Another door is set into the ground on the east. The room is lit with some flickering tubelights on the ceiling. &#x000A;&#x000A;You can see a purple key and an iron door(locked) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">"Get the hell off of my property!" the man yelled.&#x000A; but we couldn't, we where frozen in fear. Violet screamed, the rest of us didn't have the breath. The man cought up to us, grabbed Sean by his color as if he weighed nothing.&#x000A; "Were going allready" Daisy yelled, but the man wouldn't listen. Josh started running again, but tripped on a tree branch, and the man cought him too.&#x000A;HINT: You can use Become (character) to run into another Daisy, Josh, Sean, or Violet. &#x000A;Madhouse&#x000A;A semi-coherent collection of puzzles by Maurits van Riezen&#x000A;Release 1 / Serial number 151122 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;You could hardly look. The man was holing you by your arm, and suddendly, you where flying. "there you go, no way of gettting out of there!" the man sneered. You seemed to hit some stairs, and you kept rolling down, and down. You thought you where still rolling when you opened your eyes, but instead you find yourself lying still under a flight of stairs. You examine yourself, your head hurts, you have bruises everywhere, but miraculously havn' broken anything. &#x000A;cellar(as Violet)&#x000A;A small concrete hole in the ground, a narrow concrete staircase leads up, with a iron door above it. Another door is set into the ground on the east. The room is lit with some flickering tubelights on the ceiling. &#x000A;&#x000A;You can see a purple key and an iron door(locked) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DA8B18"/>
-      <child nodeId="node-0x02DB6378"/>
+      <child nodeId="node-0x02E73F08"/>
+      <child nodeId="node-0x02E49CC0"/>
+      <child nodeId="node-0x02E49C50"/>
     </children>
   </item>
-  <item nodeId="node-0x02DA8B18">
+  <item nodeId="node-0x02E73F08">
     <command xml:space="preserve">become daisy</command>
-    <result xml:space="preserve">You must have fainted, because at some point, you heared the man saying "Now I am going to leave this old place, and go on a long holiday, good thing you showed up the day before my holiday to Madagascar.!" You heared the sound of a car drive away, you look arround. &#x000A;stable(as Daisy)&#x000A;This room probably used to contain all the old knights finest horses, but some later resident has used this place to keep some of his trash. A big double door leads south, while a small door is set into the east wall.A heap of trash, including a newspaper, a pencil case, a tyre and a cardboard box has been dumped in the corner. &#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You must have fainted, because at some point, you heared the man saying "Now I am going to leave this old place, and go on a long holiday, good thing you showed up the day before my holiday to Madagascar.!" You heared the sound of a car drive away, you look arround. &#x000A;stable(as Daisy)&#x000A;This room probably used to contain all the old knights finest horses, but some later resident has used this place to keep some of his trash. A big double door leads south, while a narrow door is set into the east wall.A heap of trash, including a newspaper, a pencil, a tyre and a cardboard box has been dumped in the corner. &#x000A;&#x000A;[You have received 1 point for figuring out how this game works]&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DCC1D0"/>
-      <child nodeId="node-0x02DB5C78"/>
-      <child nodeId="node-0x02DB66F8"/>
+      <child nodeId="node-0x02E73F78"/>
+      <child nodeId="node-0x02E46D50"/>
     </children>
   </item>
-  <item nodeId="node-0x02DCC1D0">
+  <item nodeId="node-0x02E73F78">
     <command xml:space="preserve">take blue pen</command>
-    <result xml:space="preserve">Yours.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Just how do you expect to get a thing like that here?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DCC240"/>
+      <child nodeId="node-0x02E66B08"/>
     </children>
   </item>
-  <item nodeId="node-0x02DCC240">
+  <item nodeId="node-0x02E66B08">
     <command xml:space="preserve">take newspaper</command>
     <result xml:space="preserve">Yours.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -46,10 +46,10 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DCC340"/>
+      <child nodeId="node-0x02E387E8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DCC340">
+  <item nodeId="node-0x02E387E8">
     <command xml:space="preserve">put newspaper in gap</command>
     <result xml:space="preserve">You put the newspaper into the the crack under the door.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -57,10 +57,10 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DCC3B0"/>
+      <child nodeId="node-0x02E38858"/>
     </children>
   </item>
-  <item nodeId="node-0x02DCC3B0">
+  <item nodeId="node-0x02E38858">
     <command xml:space="preserve">x gap</command>
     <result xml:space="preserve">In the the crack under the door is a newspaper.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -68,32 +68,32 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DCC420"/>
+      <child nodeId="node-0x02E38B80"/>
     </children>
   </item>
-  <item nodeId="node-0x02DCC420">
+  <item nodeId="node-0x02E38B80">
     <command xml:space="preserve">l</command>
-    <result xml:space="preserve">garage(as Daisy)&#x000A;You can see a pencil case (in which are three pencils, a blue pen and a black pen) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">stable(as Daisy)&#x000A;This room probably used to contain all the old knights finest horses, but some later resident has used this place to keep some of his trash. A big double door leads south, while a narrow door is set into the east wall.A heap of trash, including a pencil, a tyre and a cardboard box has been dumped in the corner. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DD4D40"/>
+      <child nodeId="node-0x02E469E8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DD4D40">
-    <command xml:space="preserve">poke key with blue pen</command>
+  <item nodeId="node-0x02E469E8">
+    <command xml:space="preserve">poke key with pencil</command>
     <result xml:space="preserve">(I recomend saving before you try this, would you like to save first?)</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DD4DB0"/>
+      <child nodeId="node-0x02E46A58"/>
     </children>
   </item>
-  <item nodeId="node-0x02DD4DB0">
+  <item nodeId="node-0x02E46A58">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You poke the key, and it falls out the other side. &#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -101,10 +101,10 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DD4EE8"/>
+      <child nodeId="node-0x02E46B90"/>
     </children>
   </item>
-  <item nodeId="node-0x02DD4EE8">
+  <item nodeId="node-0x02E46B90">
     <command xml:space="preserve">take newspaper</command>
     <result xml:space="preserve">You find the key on the newspaper! It falls on the floor after you take the paper. &#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -112,10 +112,10 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DD4F58"/>
+      <child nodeId="node-0x02E46C00"/>
     </children>
   </item>
-  <item nodeId="node-0x02DD4F58">
+  <item nodeId="node-0x02E46C00">
     <command xml:space="preserve">take key</command>
     <result xml:space="preserve">Yours.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -123,30 +123,30 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DB6940"/>
+      <child nodeId="node-0x02E46C70"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB6940">
-    <command xml:space="preserve">unlock small door</command>
-    <result xml:space="preserve">(with the plain key)&#x000A;You unlock the small door.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02E46C70">
+    <command xml:space="preserve">unlock narrow door</command>
+    <result xml:space="preserve">(with the plain key)&#x000A;You unlock the narrow door.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DB6AB0"/>
+      <child nodeId="node-0x02E46CE0"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB6AB0">
+  <item nodeId="node-0x02E46CE0">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">(Opening the small door first)&#x000A;You open the small door.&#x000A;&#x000A;hallway(as Daisy)&#x000A;You can see a small door(open) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(Opening the narrow door first)&#x000A;You open the narrow door.&#x000A;&#x000A;1st floor east hallway(as Daisy)&#x000A;A long and clausrophobically passage running through the oldest part of the castle. The walls are are made of roughly cut grey stone, the floor is rough, and hurts your feet to walk on. Halfway the passage, a tall door leads north, and both the east and west end in doors. &#x000A;&#x000A;You can see a west door(open) and a tall door(closed ) here.&#x000A;&#x000A;[You have received 1 point for getting daisy out of the stable]&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <annotation xml:space="preserve">Opens the door</annotation>
   </item>
-  <item nodeId="node-0x02DB5C78">
+  <item nodeId="node-0x02E46D50">
     <command xml:space="preserve">take all</command>
     <result xml:space="preserve">newspaper: Yours.&#x000A;pencil case: Yours.&#x000A;tyre: Yours.&#x000A;cardboard box: Yours.&#x000A;pencil: Yours.&#x000A;pencil: Yours.&#x000A;pencil: Yours.&#x000A;blue pen: Yours.&#x000A;blue pen: Yours.&#x000A;black pen: Yours.&#x000A;plain key: The keyhole is to small to reach the key.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -154,10 +154,10 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DB5F18"/>
+      <child nodeId="node-0x02E49B00"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB5F18">
+  <item nodeId="node-0x02E49B00">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">stable(as Daisy)&#x000A;This room probably used to contain all the old knights finest horses, but some later resident has used this place to keep some of his trash. A big double door leads south, while a small door reveals the passageway to the east. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -165,367 +165,7 @@
     <changed>YES</changed>
     <temporary score="0">NO</temporary>
   </item>
-  <item nodeId="node-0x02DB66F8">
-    <command xml:space="preserve">x box</command>
-    <result xml:space="preserve">You see nothing special about the cardboard box.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB6298"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB6298">
-    <command xml:space="preserve">open box</command>
-    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB5B28"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB5B28">
-    <command xml:space="preserve">south</command>
-    <result xml:space="preserve">That door leads nowhere!&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB5B98"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB5B98">
-    <command xml:space="preserve">east</command>
-    <result xml:space="preserve">(Opening the small door first)&#x000A;(first unlocking the small door)&#x000A;You lack a key that fits the small door.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB5968"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB5968">
-    <command xml:space="preserve">find key</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB59D8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB59D8">
-    <command xml:space="preserve">search key</command>
-    <result xml:space="preserve">You find nothing of interest.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB6308"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB6308">
-    <command xml:space="preserve">open pencil case</command>
-    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB5D58"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB5D58">
-    <command xml:space="preserve">open case</command>
-    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB5E38"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB5E38">
-    <command xml:space="preserve">x case</command>
-    <result xml:space="preserve">In the pencil case are three pencils, two blue pens and a black pen.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB6228"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB6228">
-    <command xml:space="preserve">take pens</command>
-    <result xml:space="preserve">blue pen: Yours.&#x000A;blue pen: Yours.&#x000A;black pen: Yours.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB5F88"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB5F88">
-    <command xml:space="preserve">take pencil</command>
-    <result xml:space="preserve">(the pencil case)&#x000A;Yours.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB6768"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB6768">
-    <command xml:space="preserve">x door</command>
-    <result xml:space="preserve">Which do you mean, the stable door or the small door?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB68B8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB68B8">
-    <command xml:space="preserve">x small door</command>
-    <result xml:space="preserve">A dented wooden door. A simple lock is in the door, the man seems to have left the key in the other side of the door. There is a sizable gap between the door and the floor.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB6848"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB6848">
-    <command xml:space="preserve">take paper</command>
-    <result xml:space="preserve">Just how do you expect to get a thing like that here?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02DB67D8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02DB67D8">
-    <command xml:space="preserve">take newspaper</command>
-    <result xml:space="preserve">Yours.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87958"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87958">
-    <command xml:space="preserve">put newspaper under the door</command>
-    <result xml:space="preserve">Which do you mean, the stable door or the small door?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87648"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87648">
-    <command xml:space="preserve">small</command>
-    <result xml:space="preserve">You slide the newspaper in the crack under the door. &#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87BF8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87BF8">
-    <command xml:space="preserve">take pencil</command>
-    <result xml:space="preserve">(the pencil)&#x000A;Yours.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87A38"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87A38">
-    <command xml:space="preserve">push pencil in keyhole</command>
-    <result xml:space="preserve">Which do you mean, a pencil or the pencil case?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87F78"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87F78">
-    <command xml:space="preserve">pencil</command>
-    <result xml:space="preserve">Which do you mean, a pencil or the pencil case?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87C68"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87C68">
-    <command xml:space="preserve">push key</command>
-    <result xml:space="preserve">Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E875D8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E875D8">
-    <command xml:space="preserve">push key with pen</command>
-    <result xml:space="preserve">Which do you mean, the black pen or a blue pen?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87E98"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87E98">
-    <command xml:space="preserve">blue</command>
-    <result xml:space="preserve">(I recomend saving before you try this, would you like to save first?)</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87F08"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87F08">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You poke the key, and it falls out the other side. &#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87B88"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87B88">
-    <command xml:space="preserve">pull the newspaper</command>
-    <result xml:space="preserve">I only understood you as far as wanting to pull the newspaper.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87418"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87418">
-    <command xml:space="preserve">ye</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E876B8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E876B8">
-    <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">That was a rhetorical question.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87728"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87728">
-    <command xml:space="preserve">pull</command>
-    <result xml:space="preserve">What do you want to pull?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E872C8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E872C8">
-    <command xml:space="preserve">newspaper</command>
-    <result xml:space="preserve">You find the key on the newspaper! It falls on the floor after you take the paper. &#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E879C8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E879C8">
-    <command xml:space="preserve">take newspaper</command>
-    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87488"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87488">
-    <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">Yours.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E87B18"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E87B18">
-    <command xml:space="preserve">open the door</command>
-    <result xml:space="preserve">Which do you mean, the stable door or the small door?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E874F8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E874F8">
-    <command xml:space="preserve">small</command>
-    <result xml:space="preserve">(first unlocking the small door)&#x000A;(with the plain key)&#x000A;You open the small door.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02DB6378">
+  <item nodeId="node-0x02E49CC0">
     <command xml:space="preserve">become josh</command>
     <result xml:space="preserve">"here ya go" the man yelled "you will never get out of here untill you rot!" He threw you into the small room, you hit your head again some kind of box, you could just hear the man stomp out the door, locking it behind him. &#x000A;attic(as Josh)&#x000A;A small room, probably later cut off from the rest of the cellar. The walls are made of wooden planks, pretty new relative to the old floor. The ceiling runs diogonally down one side, there is a window in the ceiling&#x000A;&#x000A;You can see an inside attic window(locked) and a broad box (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -533,10 +173,10 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DB6458"/>
+      <child nodeId="node-0x02E49E80"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB6458">
+  <item nodeId="node-0x02E49E80">
     <command xml:space="preserve">x floor</command>
     <result xml:space="preserve">The floor is made of very old planks, nailed to a layer of beams below.  One plank seems a bit loose. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -544,10 +184,10 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DB6068"/>
+      <child nodeId="node-0x02E49E10"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB6068">
+  <item nodeId="node-0x02E49E10">
     <command xml:space="preserve">pull plank</command>
     <result xml:space="preserve">You pull at the board, and it comes of the ground a little, you pull a little more, and then the plank snaps in half, laving a gaping hole in the floor. &#x000A;Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -555,10 +195,10 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DB6148"/>
+      <child nodeId="node-0x02E49B70"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB6148">
+  <item nodeId="node-0x02E49B70">
     <command xml:space="preserve">pull board</command>
     <result xml:space="preserve">You pull at the board, and it comes of the ground a little, you pull a little more, and then the plank snaps in half, laving a gaping hole in the floor. &#x000A;Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -566,103 +206,263 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DB5AB8"/>
+      <child nodeId="node-0x02E49D30"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB5AB8">
+  <item nodeId="node-0x02E49D30">
     <command xml:space="preserve">enter hole</command>
     <result xml:space="preserve">You first look down, but then decide not to and just jump. Luckily, you land on a bed after falling a couple of meters. The hole you came from is far up in the sky.&#x000A;&#x000A;(Opening the hole in the floor first)&#x000A;You open the hole in the floor.&#x000A;&#x000A;green bedroom(as Josh)&#x000A;A square room, newly painted, and with a nice, comby bed. Next to the bed is a cabinet .&#x000A;&#x000A;You can see a cabinet here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
+  </item>
+  <item nodeId="node-0x02E49C50">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">maintanance room(as Violet)&#x000A;This is a long room, with a low ceiling. A doorway goes west. The room is filled with pipes of all shapes and sizes, including some narrow metalic blue pipes, some very wide concrete pipes, and in between there is one rusty red pipe of a medium width.  &#x000A;&#x000A;You can see a plug here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DB6618"/>
+      <child nodeId="node-0x02E4A190"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB6618">
-    <command xml:space="preserve">enter hole</command>
-    <result xml:space="preserve">The hole in the ceiling to high to reach!&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02E4A190">
+    <command xml:space="preserve">x medium</command>
+    <result xml:space="preserve">A very rusty pipe comes in threw the ceiling into the north wall. A segment that has recently been replaced.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E49F60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E49F60">
+    <command xml:space="preserve">x segment</command>
+    <result xml:space="preserve">A half-meter long matte piece op pipes, with screws bits on both ends. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E49BE0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E49BE0">
+    <command xml:space="preserve">unscrew segment</command>
+    <result xml:space="preserve">The segment comes loose in your hand as you unscrew it!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E4A0B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E4A0B0">
+    <command xml:space="preserve">take plug</command>
+    <result xml:space="preserve">Yours.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E49DA0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E49DA0">
+    <command xml:space="preserve">attach plug to segment</command>
+    <result xml:space="preserve">You try, but they both have the same type of screw, so you can't attach them. &#x000A;&gt;</result>
+    <commentary xml:space="preserve">You try, but they both have the same type of screw, so you can't attach them. &#x000A;&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E57520"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E57520">
+    <command xml:space="preserve">attach plug to medium</command>
+    <result xml:space="preserve">You attach the plug to the segment&#x000A;&gt;</result>
+    <commentary xml:space="preserve">You attach the plug to the segment&#x000A;&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E57210"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E57210">
+    <command xml:space="preserve">become sean</command>
+    <result xml:space="preserve">You put up a good fight, you kept biting, scratching and prying. "you think you are smart resisting like that? Stupid mormel you are!" the man yelled. He threw you into the the first door he passed. You heared sounds like a heavy wooden object was moved in front of the the door, and you heard "You will never get out of there, moron!" &#x000A;Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;[You have received 1 point for figuring out how this game works]&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E56CD0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E56CD0">
+    <command xml:space="preserve">feel</command>
+    <result xml:space="preserve">You search the walls, and finally find a lightswitch.&#x000A;&#x000A;bathroom(as Sean)&#x000A;A longish room. To the east is a door, you can see a sink, and a shower here. There is a drain in the corner. &#x000A;&#x000A;You can see a black bag (closed) and a plastic door(locked) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E574B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E574B0">
+    <command xml:space="preserve">open bag</command>
+    <result xml:space="preserve">You open the black bag, revealing a screwdriver, a roll of plumbing tape and a wrench.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E57280"/>
+      <child nodeId="node-0x02E57440"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E57280">
+    <command xml:space="preserve">open black</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DB5A48"/>
+      <child nodeId="node-0x02E569C0"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB5A48">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">green bedroom&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02E569C0">
+    <command xml:space="preserve">x black</command>
+    <result xml:space="preserve">A small black bag, made of stif cloth. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DB5EA8"/>
+      <child nodeId="node-0x02E568E0"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB5EA8">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">attic&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02E568E0">
+    <command xml:space="preserve">open black</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DB5DC8"/>
+      <child nodeId="node-0x02E56F00"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB5DC8">
-    <command xml:space="preserve">d</command>
-    <result xml:space="preserve">You first look down, but then decide not to and just jump. Luckily, you land on a bed after falling a couple of meters. The hole you came from is far up in the sky.&#x000A;&#x000A;(Opening the hole in the floor first)&#x000A;You open the hole in the floor.&#x000A;&#x000A;green bedroom(as Josh)&#x000A;A square room, newly painted, and with a nice, comby bed. Next to the bed is a cabinet .&#x000A;&#x000A;You can see a cabinet here.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02E56F00">
+    <command xml:space="preserve">showme black</command>
+    <result xml:space="preserve">black bag - closed container&#x000A;    screwdriver&#x000A;    roll of plumbing tape&#x000A;    wrench&#x000A;location: in the bathroom&#x000A;singular-named, improper-named; unlit, inedible, portable; opaque, closed, unopenable, unlocked&#x000A;list grouping key: none&#x000A;printed name: "black bag"&#x000A;printed plural name: "containers"&#x000A;indefinite article: none&#x000A;description: "A small black bag, made of stif cloth. "&#x000A;initial appearance: none&#x000A;thing condition: small&#x000A;carrying capacity: 100&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DB6688"/>
+      <child nodeId="node-0x02E56E20"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB6688">
-    <command xml:space="preserve">u</command>
-    <result xml:space="preserve">The hole in the ceiling to high to reach!&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02E56E20">
+    <command xml:space="preserve">close black</command>
+    <result xml:space="preserve">It isn't something you can close.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02E57440">
+    <command xml:space="preserve">take all from bag</command>
+    <result xml:space="preserve">screwdriver: Yours.&#x000A;roll of plumbing tape: Yours.&#x000A;wrench: Yours.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E57130"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E57130">
+    <command xml:space="preserve">x screwdriver</command>
+    <result xml:space="preserve">A big screwdriver, with a green-transparent handle. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E57590"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E57590">
+    <command xml:space="preserve">unscrew door</command>
+    <result xml:space="preserve">Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E57600"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E57600">
+    <command xml:space="preserve">x door</command>
+    <result xml:space="preserve">This door is from the days plastic was just invented, and someone thought this combination of plastic and mettal would look modern.  The hinge is screwed to the wall, with cracks in the tiles running from the holes. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02E56FE0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02E56FE0">
+    <command xml:space="preserve">take screw</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DB61B8"/>
+      <child nodeId="node-0x02E56DB0"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB61B8">
-    <command xml:space="preserve">x bed</command>
-    <result xml:space="preserve">You see nothing special about the green bed.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02E56DB0">
+    <command xml:space="preserve">take hinge</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DB63E8"/>
+      <child nodeId="node-0x02E572F0"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB63E8">
-    <command xml:space="preserve">sit on bed</command>
-    <result xml:space="preserve">You get onto the green bed.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02E572F0">
+    <command xml:space="preserve">open hinge</command>
+    <result xml:space="preserve">(first unlocking the plastic door)&#x000A;You lack a key that fits the plastic door.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DB64C8"/>
+      <child nodeId="node-0x02E57050"/>
     </children>
   </item>
-  <item nodeId="node-0x02DB64C8">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">green bedroom(as Josh) (on the green bed)&#x000A;A square room, newly painted, and with a nice, comby bed. Next to the bed is a cabinet .&#x000A;&#x000A;You can see a cabinet here.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02E57050">
+    <command xml:space="preserve">enter hinge</command>
+    <result xml:space="preserve">That door leads nowhere!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
 </Skein>

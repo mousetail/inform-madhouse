@@ -9,7 +9,7 @@ project folder "C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform"
 
 ! Blorb instructions
 
-storyfile leafname "madhouse.gblorb"
+storyfile leafname "Madhouse.gblorb"
 storyfile "C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform\Build\output.ulx" include
 ifiction "C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
@@ -20,9 +20,9 @@ picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 placeholder [IFID] = "F9911368-E091-45C8-B951-BB1DC4FDC6A7"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2015"
-placeholder [TITLE] = "madhouse"
-placeholder [AUTHOR] = "Maurits"
-placeholder [BLURB] = "A work of interactive fiction."
+placeholder [TITLE] = "Madhouse"
+placeholder [AUTHOR] = "Maurits van Riezen"
+placeholder [BLURB] = "4 characters try to excape from an old mansion, by solving various puzzles."
 
 ! Other material to release
 
