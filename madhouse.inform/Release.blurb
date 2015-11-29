@@ -9,8 +9,8 @@ project folder "C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform"
 
 ! Blorb instructions
 
-storyfile leafname "Madhouse.gblorb"
-storyfile "C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform\Build\output.ulx" include
+storyfile leafname "Madhouse.zblorb"
+storyfile "C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform\Build\output.z8" include
 ifiction "C:\Users\Maurits\Documents\IF\madhouse\madhouse.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
